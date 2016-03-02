@@ -60,6 +60,7 @@ nav {
   width: 800px;
   margin: auto;
   margin-top: 30px;
+	margin-right: 10000px;
 }
 h1, h2, h3, h4, h5, p {
   font-family: sans-serif 'helvetica', 'arial';
