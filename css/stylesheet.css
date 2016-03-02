@@ -73,7 +73,9 @@ video {
 h1{
   color: #F8BD01;
 }
-h2, h3, h4, h5, p {
-  font-family: "bebas_neueregular";
+h2, h3, h4, h5, {
+  font-family: 'bebas_neueregular';
+	font-weight: normal;
+	font-style: normal;
   color: black;
 }
