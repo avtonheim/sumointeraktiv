@@ -18,7 +18,7 @@ body {
 	min-width: 100vw;
 	height: 50px;
 	z-index: 5;
-	background-color: blue;
+	background-color: #393840;
 }
 nav{
 	position: absolute;
@@ -39,10 +39,10 @@ nav{
 }
 
 #ettelleranna{
-	background-color: #FFFFFF;
+	background-color: #CECAE5;
 }
 #about{
-	background-color: #FFFFFF;
+	background-color: #72707F;
 }
 .prototypeinf{
 	width: 100vw;
