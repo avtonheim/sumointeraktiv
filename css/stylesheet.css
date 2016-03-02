@@ -48,9 +48,20 @@ nav {
   color: #F8BD01;
 	background-color: #EDFFF5;
 }
-/*Section for ett eller anna*/
-#ettelleranna {
+/*Section for ett eller anna
+Fiksa også web-kit columns for fin visuell effekt av bloggposter
+*/
+#blogg {
+	margin: auto;
   background-color: #EDFFF5;
+	-webkit-columns: 100px 3; /* Chrome, Safari, Opera */
+	-moz-columns: 100px 3; /* Firefox */
+	columns: 90px 3;
+}
+/*Skape meir space for columns*/
+#blogg .tekst{
+	padding-top: 20%;
+	text-align: left;
 }
 /*Section for om oss. det er den første section*/
 #about {
@@ -79,9 +90,13 @@ video {
 /*Section for video*/
 #prototype {
   text-align: center;
+	height: 800px;
 }
 #prototype video {
   margin-top: 7%;
+}
+#prototype h2, #prototype p{
+	color: white;
 }
 h1{
   color: #F8BD01;
