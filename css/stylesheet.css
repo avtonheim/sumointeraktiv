@@ -55,10 +55,8 @@ nav {
   height: 100vh;
   background-color: #262626;
 }
-#protovideo{
-	padding-top: 10%;
-}
-.one {
+#protovideo {
+	margin: auto;
   width: 800px;
   margin: auto;
   margin-top: 30px;
