@@ -55,12 +55,20 @@ nav {
   height: 100vh;
   background-color: #262626;
 }
+<<<<<<< HEAD
 #protovideo {
 	margin: auto;
   width: 800px;
   margin: auto;
   margin-top: 30px;
 	margin-right: 10000px;
+=======
+#prototype {
+	text-align: center;
+}
+#prototype video{
+	margin-top: 7%;
+>>>>>>> origin/master
 }
 h1, h2, h3, h4, h5, p {
   font-family: sans-serif 'helvetica', 'arial';
