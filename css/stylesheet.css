@@ -2,6 +2,9 @@
 	margin: 0;
 	padding: 0;
 }
+h1, h2, h3, h4, h5, p{
+	color: black;
+}
 body {
   display: block;
   margin: 0 auto;
@@ -43,6 +46,14 @@ nav{
 }
 #about{
 	background-color: #EDFFF5;
+}
+.tekst{
+	padding-top: 10%;
+	text-align: center;
+}
+.tekst h2{
+	font-size:
+	font-weight: bold;
 }
 .prototypeinf{
 	width: 100vw;
