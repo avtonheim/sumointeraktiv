@@ -18,7 +18,7 @@ body {
 	min-width: 100vw;
 	height: 50px;
 	z-index: 5;
-	background-color: #403D32;
+	background-color: #243536;
 }
 nav{
 	position: absolute;
@@ -42,7 +42,7 @@ nav{
 	background-color: #CECAE5;
 }
 #about{
-	background-color: #E5DDB3;
+	background-color: #EDFFF5;
 }
 .prototypeinf{
 	width: 100vw;
