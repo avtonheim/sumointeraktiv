@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +7,7 @@ body {
   display: block;
   margin: 0 auto;
 }
+/*LOGO for vårt prosjekt.*/
 #logo {
   display: inline-block;
   text-decoration: none;
@@ -13,6 +15,7 @@ body {
   left: 10%;
   line-height: 1.7;
 }
+/*Heile header for menyen*/
 .meny {
   position: fixed;
   min-width: 100vw;
@@ -29,6 +32,8 @@ nav {
   display: inline-block;
 }
 #navigasjon a {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
   min-width: 100px;
   padding: 18px 40px 17px;
   color: white;
@@ -42,12 +47,15 @@ nav {
   color: #F8BD01;
   text-decoration: underline;
 }
+/*Section for ett eller anna*/
 #ettelleranna {
   background-color: #C7FDFF;
 }
+/*Section for om oss. det er den første section*/
 #about {
   background-color: #EDFFF5;
 }
+/*Section for tekst for å få fin padding og leseflyt*/
 .tekst {
   padding-top: 10%;
   text-align: center;
@@ -55,15 +63,18 @@ nav {
 .tekst h2 {
   font-size: font-weight: bold;
 }
+/*Klasse for alle sections, superklasse!*/
 .innhold {
   width: 100vw;
   height: 100vh;
   background-color: #262626;
 }
+/*Video tag for videoen i #prototype section*/
 video {
   width: 800px;
   margin-top: 30px;
 }
+/*Section for video*/
 #prototype {
   text-align: center;
 }
@@ -72,10 +83,12 @@ video {
 }
 h1{
   color: #F8BD01;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
 }
-h2, h3, h4, h5, {
-  font-family: 'bebas_neueregular';
-	font-weight: normal;
-	font-style: normal;
+/*Global regel for h2, h3, h4, og h5*/
+h2, h3, h4, h5 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
   color: black;
 }
