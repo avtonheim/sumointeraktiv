@@ -46,11 +46,11 @@ nav {
 }
 #navigasjon a:hover {
   color: #F8BD01;
-  text-decoration: underline;
+	background-color: #EDFFF5;
 }
 /*Section for ett eller anna*/
 #ettelleranna {
-  background-color: #C7FDFF;
+  background-color: #EDFFF5;
 }
 /*Section for om oss. det er den første section*/
 #about {
