@@ -36,6 +36,7 @@ nav {
   text-align: center;
   text-decoration: none;
   line-height: 3;
+  color: #F8BD01;
 }
 #navigasjon a:hover {
   color: white;
@@ -70,7 +71,7 @@ video {
   margin-top: 7%;
 }
 h1{
-  color: white;
+  color: #F8BD01;
 }
 h2, h3, h4, h5, p {
   font-family: sans-serif 'helvetica', 'arial';
