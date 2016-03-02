@@ -69,7 +69,10 @@ video {
 #prototype video {
   margin-top: 7%;
 }
-h1, h2, h3, h4, h5, p {
+h1{
+  color: black;
+}
+h2, h3, h4, h5, p {
   font-family: sans-serif 'helvetica', 'arial';
   color: black;
 }
