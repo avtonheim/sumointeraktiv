@@ -37,6 +37,10 @@ nav {
   text-decoration: none;
   line-height: 3;
 }
+#navigasjon a:hover {
+  color: white;
+  text-decoration: underline;
+}
 #ettelleranna {
   background-color: #C7FDFF;
 }
@@ -59,11 +63,11 @@ video {
   width: 800px;
   margin-top: 30px;
 }
-#prototype{
-	text-align: center;
+#prototype {
+  text-align: center;
 }
-#prototype video{
-	margin-top: 7%;
+#prototype video {
+  margin-top: 7%;
 }
 h1, h2, h3, h4, h5, p {
   font-family: sans-serif 'helvetica', 'arial';
