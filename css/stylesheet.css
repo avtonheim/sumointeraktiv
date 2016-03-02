@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Crimson+Text);
 * {
   margin: 0;
   padding: 0;
@@ -61,7 +62,8 @@ nav {
   text-align: center;
 }
 .tekst h2 {
-  font-size: font-weight: bold;
+  font-weight: bold;
+	padding-bottom: 20px;
 }
 /*Klasse for alle sections, superklasse!*/
 .innhold {
@@ -91,4 +93,15 @@ h2, h3, h4, h5 {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
   color: black;
+}
+p{
+	font-family: 'Crimson Text', serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	text-transform: none;
+	text-decoration: none;
+	letter-spacing: -0.019em;
+	word-spacing: 0.041em;
+	line-height: 1.24;
 }
