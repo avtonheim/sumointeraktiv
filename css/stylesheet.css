@@ -1,68 +1,62 @@
-*{
-	margin: 0;
-	padding: 0;
-}
-h1, h2, h3, h4, h5, p{
-	color: black;
+* {
+  margin: 0;
+  padding: 0;
 }
 body {
   display: block;
   margin: 0 auto;
 }
-#logo{
-	display: inline-block;
-	text-decoration: none;
-	position: absolute;
-	left: 10%;
-	line-height: 1.7;
+#logo {
+  display: inline-block;
+  text-decoration: none;
+  position: absolute;
+  left: 10%;
+  line-height: 1.7;
 }
-.meny{
-	position: fixed;
-	min-width: 100vw;
-	height: 50px;
-	z-index: 5;
-	background-color: #243536;
+.meny {
+  position: fixed;
+  min-width: 100vw;
+  height: 50px;
+  z-index: 5;
+  background-color: #243536;
 }
-nav{
-	position: absolute;
-	display: inline-block;
-	right: 15%;
+nav {
+  position: absolute;
+  display: inline-block;
+  right: 15%;
 }
-#navigasjon li{
-	display: inline-block;
+#navigasjon li {
+  display: inline-block;
 }
-#navigasjon a{
-	min-width: 100px;
-	padding: 18px 40px 17px;
-	color: white;
-	font-weight: bold;
-	text-align: center;
-	text-decoration: none;
-	line-height: 3;
+#navigasjon a {
+  min-width: 100px;
+  padding: 18px 40px 17px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  line-height: 3;
 }
-
-#ettelleranna{
-	background-color: #CECAE5;
+#ettelleranna {
+  background-color: #CECAE5;
 }
-#about{
-	background-color: #EDFFF5;
+#about {
+  background-color: #EDFFF5;
 }
-.tekst{
+.tekst {
+  padding-top: 10%;
+  text-align: center;
+}
+.tekst h2 {
+  font-size: font-weight: bold;
+}
+.prototypeinf {
+  width: 100vw;
+  height: 100vh;
+  background-color: #262626;
+}
+#protovideo{
 	padding-top: 10%;
-	text-align: center;
-}
-.tekst h2{
-	font-size:
-	font-weight: bold;
-}
-.prototypeinf{
-	width: 100vw;
-	height: 100vh;
-	background-color: #262626;
-}
-.tv2banner {
-  margin: 0 auto;
-  width: 100%;
 }
 .one {
   width: 800px;
@@ -71,22 +65,5 @@ nav{
 }
 h1, h2, h3, h4, h5, p {
   font-family: sans-serif 'helvetica', 'arial';
-  color: #cccccc;
-}
-/*h1 {
-  font-size: 30px;
-  line-height: 20%;
-}
-h2 {
-  margin-top: 30px;
-  line-height: 20%;
-  font-size: 15px;
-  color: #6d6d6d;
-}
-h2:hover {
-  color: #fd7e23;
-}*
-.tekstvideo {
-  margin: auto;
-  width: 800px;
+  color: black;
 }
