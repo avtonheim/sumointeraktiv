@@ -44,6 +44,15 @@ nav {
   line-height: 3;
   color: #F8BD01;
 }
+/*Laga ein visuell effekt med namnet SRM*/
+.bakgrunnlogo{
+  font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+  font-size: 100px;
+  opacity: 0.3;
+  z-index: -1;
+  color: #F8BD01;
+}
 #navigasjon a:hover {
   color: #F8BD01;
 	background-color: #EDFFF5;
