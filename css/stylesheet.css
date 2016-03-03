@@ -13,7 +13,7 @@ body {
   display: inline-block;
   text-decoration: none;
   position: absolute;
-  left: 10%;
+  left: 7%;
   line-height: 1.7;
 }
 /*Heile header for menyen*/
@@ -27,7 +27,7 @@ body {
 nav {
   position: absolute;
   display: inline-block;
-  right: 15%;
+  right: 5%;
 }
 #navigasjon li {
   display: inline-block;
