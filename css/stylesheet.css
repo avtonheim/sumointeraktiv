@@ -56,7 +56,7 @@ Fiksa også web-kit columns for fin visuell effekt av bloggposter
   background-color: #EDFFF5;
 	-webkit-columns: 100px 3; /* Chrome, Safari, Opera */
 	-moz-columns: 100px 3; /* Firefox */
-	columns: 90px 3;
+	columns: 100px 3;
 }
 /*Skape meir space for columns*/
 #blogg .tekst{
