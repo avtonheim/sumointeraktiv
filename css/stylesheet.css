@@ -62,17 +62,22 @@ nav {
 Fiksa også web-kit columns for fin visuell effekt av bloggposter
 */
 #blogg {
-	margin: auto;
-  height: auto;
+  height: 1000px;
   background-color: #EDFFF5;
+  text-align: center;
+}
+#blogg h2{
+  padding-top: 3%;
+}
+.bloggentry{
+  display: inline-block;
+  margin: 3%;
+  width: 300px;
+  height: 600px;
+  text-align: left;
+  padding-top: 10%;
 }
 
-/*Skape meir space for columns*/
-#blogg .tekst{
-	padding-top: 20%;
-  width: 900px;
-	text-align: left;
-}
 /*Section for om oss. det er den første section*/
 #about {
   background-color: #EDFFF5;
@@ -92,14 +97,14 @@ Fiksa også web-kit columns for fin visuell effekt av bloggposter
   height: 100vh;
   background-color: #262626;
 }
-
+/*Bilde for blogg*/
 .bloggbilde {
-  width: 200px;
+  width: 300px;
   float: left;
+  padding-bottom: 2%;
 }
 
 /*Video tag for videoen i #prototype section*/
-
 video {
   width: 800px;
   margin-top: 30px;
