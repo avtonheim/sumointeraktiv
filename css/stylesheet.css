@@ -63,10 +63,8 @@ Fiksa også web-kit columns for fin visuell effekt av bloggposter
 */
 #blogg {
 	margin: auto;
+  height: auto;
   background-color: #EDFFF5;
-	-webkit-columns: 100px 3; /* Chrome, Safari, Opera */
-	-moz-columns: 100px 3; /* Firefox */
-	columns: 100px 3;
 }
 
 /*Skape meir space for columns*/
@@ -89,15 +87,14 @@ Fiksa også web-kit columns for fin visuell effekt av bloggposter
 	padding-bottom: 20px;
 }
   /*Klasse for alle sections, superklasse!*/
-
 .innhold {
   width: 100vw;
   height: 100vh;
   background-color: #262626;
 }
 
-.innhold img {
-  height: 500px;
+.bloggbilde {
+  width: 200px;
   float: left;
 }
 
