@@ -22,7 +22,7 @@ body {
   min-width: 100vw;
   height: 60px;
   z-index: 5;
-  background-color: #243536;
+  /*background-color: #243536;*/
 }
 nav {
   position: absolute;
@@ -55,25 +55,24 @@ nav {
   color: #F8BD01;
 }
 #navigasjon a:hover {
-  color: #F8BD01;
-	background-color: #EDFFF5;
+  border-top: 15px solid #F8BD01;
 }
 /*Section for ett eller anna*/
 #blogg {
-  height: 1000px;
+  height: 900px;
   background-color: #EDFFF5;
   text-align: center;
 }
 #blogg h2{
-  padding-top: 3%;
+  padding-top: 2em;
 }
 .bloggentry{
-  display: inline-block;
+  float: left;
   margin: 3%;
   width: 300px;
   height: 600px;
   text-align: left;
-  padding-top: 10%;
+  padding-top: 3em;
 }
 
 /*Section for om oss. det er den første section*/
