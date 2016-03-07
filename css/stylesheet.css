@@ -67,23 +67,13 @@ nav {
 #blogg h2{
   padding-top: 3%;
 }
-
-.innhold #blogg{
-  display: -webkit-flex;
-  display: flex;
-}
-
 .bloggentry{
-  -webkit-flex: 1;
-  flex: 1;
-}
-
-.bloggbilde {
   display: inline-block;
   margin: 3%;
-  width: auto;
+  width: 300px;
+  height: 600px;
   text-align: left;
-  padding-top: 4%;
+  padding-top: 10%;
 }
 
 /*Section for om oss. det er den første section*/
@@ -109,7 +99,6 @@ nav {
 .bloggbilde {
   width: 300px;
   float: left;
-  margin: 0px 0px 15px 15px;
   padding-bottom: 2%;
 }
 
@@ -152,6 +141,7 @@ p{
 	word-spacing: 0.041em;
 	line-height: 1.24;
 }
+
 footer{
   width: 100vw;
   height: 300px;
