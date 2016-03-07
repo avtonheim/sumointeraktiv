@@ -137,7 +137,7 @@ h2  {
 /*Global regel for h3, h4, og h5*/
   h3, h4, h5 {
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
   color: black;
 }
@@ -166,7 +166,7 @@ footer{
   width: 100%;
   height: 50px;
   text-align: center;
-  line-height: 2.80;
+  line-height: 3.20;
 }
 /*Respektive sections i footer*/
 .intro{
@@ -177,7 +177,6 @@ footer{
   margin: 3%;
 }
 .intro h5{
-  font-weight: bold;
   padding-bottom: 0.5em;
 }
 .intro p{
