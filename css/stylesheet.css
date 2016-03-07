@@ -150,12 +150,12 @@ p{
 footer{
   width: 100vw;
   height: 200px;
-  background-color: #C9CDD6;
+  background-color: #B4B6B9;
 }
 /*Første blokk i footer med tittel*/
 #footertittel{
   color: #F8BD01;
-  background-color: #D4E5F0;
+  background-color: #CDD4DA;;
   width: 100%;
   height: 50px;
   text-align: center;
