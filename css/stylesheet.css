@@ -61,20 +61,25 @@ nav {
 #blogg {
   height: 900px;
   background-color: #EDFFF5;
-  text-align: center;
 }
 #blogg h2{
   padding-top: 2em;
 }
-.bloggentry{
-  float: left;
-  margin: 3%;
-  width: 300px;
-  height: 600px;
+/*Fikser kul style på bloggsection
+Altså høgre section*/
+.leftblogg{
+  float: right;
   text-align: left;
-  padding-top: 3em;
+  width: 48%;
 }
-
+/*Fikser kul style på bloggsection
+Altså høgre section*/
+.rightblogg{
+  text-align: right;
+  float: left;
+  width: 48%;
+  margin-right: 4%;
+}
 /*Section for om oss. det er den første section*/
 #about {
   background-color: #EDFFF5;
@@ -95,9 +100,8 @@ nav {
 }
 /*Bilde for blogg*/
 .bloggbilde {
-  width: 300px;
-  float: left;
-  padding-bottom: 2%;
+  width: 150px;
+  padding: 2% 0 2% 0;
 }
 
 /*Video tag for videoen i #prototype section*/
