@@ -175,6 +175,13 @@ footer{
   text-align: center;
   line-height: 3.20;
 }
+
+.toppen {
+  margin-top: -70px;
+  float: right;
+  width: 100px;
+}
+
 /*Respektive sections i footer*/
 .intro{
   float: left;
