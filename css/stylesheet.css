@@ -58,9 +58,7 @@ nav {
   color: #F8BD01;
 	background-color: #EDFFF5;
 }
-/*Section for ett eller anna
-Fiksa også web-kit columns for fin visuell effekt av bloggposter
-*/
+/*Section for ett eller anna*/
 #blogg {
   height: 1000px;
   background-color: #EDFFF5;
@@ -171,13 +169,24 @@ footer{
 /*Respektive sections i footer*/
 .intro{
   background-color: #D4E5F0;
-  display: inline-block;
+  float: left;
+  padding: 1%;
   width: 25%;
   height: 150px;
   margin: 3%;
+}
+.intro h5{
+  font-weight: bold;
+}
+.intro p{
+  font-size: 0.9em;
 }
 /*sentrerer sections*/
 #center{
   margin: auto;
   width: 1000px;
+}
+.some{
+  width: 40px;
+  height: 40px;
 }
