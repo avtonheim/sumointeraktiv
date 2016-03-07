@@ -58,8 +58,14 @@ nav {
 #navigasjon a:hover {
   border-top: 15px solid #F8BD01;
 }
-/*Section for ett eller anna*/
-#blogg {
+#about{
+  margin: auto;
+  width: 1000px;
+  height: 600px;
+  padding-top: 150px;
+}
+/*Section for blogg*/
+#blogg{
   height: 1000px;
   width: 1000px;
   margin: auto;
