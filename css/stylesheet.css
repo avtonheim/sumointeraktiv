@@ -7,6 +7,7 @@
 body {
   display: block;
   margin: 0 auto;
+  background-color: #EDFFF5;
 }
 /*LOGO for vårt prosjekt.*/
 #logo {
@@ -59,15 +60,18 @@ nav {
 }
 /*Section for ett eller anna*/
 #blogg {
-  height: 900px;
-  background-color: #EDFFF5;
+  height: 1000px;
+  width: 1000px;
+  margin: auto;
 }
 #blogg h2{
+  text-align: center;
   padding-top: 2em;
 }
 /*Fikser kul style på bloggsection
 Altså høgre section*/
 .leftblogg{
+  margin-top: 2%;
   float: right;
   text-align: left;
   width: 48%;
@@ -79,10 +83,6 @@ Altså høgre section*/
   float: left;
   width: 48%;
   margin-right: 4%;
-}
-/*Section for om oss. det er den første section*/
-#about {
-  background-color: #EDFFF5;
 }
 /*Section for tekst for å få fin padding og leseflyt*/
 .tekst {
@@ -96,7 +96,6 @@ Altså høgre section*/
 .innhold {
   width: 100vw;
   height: 100vh;
-  background-color: #262626;
 }
 /*Bilde for blogg*/
 .bloggbilde {
@@ -108,16 +107,14 @@ Altså høgre section*/
 video {
   width: 800px;
   margin-top: 30px;
+  margin-top: 7%;
 }
 
-/*Section for video*/
+/*Section for video og prototype*/
 #prototype {
   text-align: center;
 	height: 1000px;
-}
-
-#prototype video {
-  margin-top: 7%;
+  background-color: #262626;
 }
 
 #prototype h2, #prototype p{
