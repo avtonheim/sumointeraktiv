@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,500,400italic);
 @import url(https://fonts.googleapis.com/css?family=Crimson+Text);
 * {
   margin: 0;
@@ -125,10 +125,15 @@ h1{
 	font-weight: 700;
 }
 /*Global regel for h2, h3, h4, og h5*/
-h2, h3, h4, h5 {
-	font-family: 'Roboto', sans-serif;
-	font-weight: 400;
+  h2, h3, h4, h5 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-style: normal;
   color: black;
+}
+
+h2  {
+  font-size: 25px;
 }
 p{
 	font-family: 'Crimson Text', serif;
