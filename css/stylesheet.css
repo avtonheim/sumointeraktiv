@@ -143,3 +143,16 @@ p{
 	word-spacing: 0.041em;
 	line-height: 1.24;
 }
+footer{
+  width: 100vw;
+  height: 300px;
+  background-color: #C9CDD6;
+}
+#footerinnhold{
+  color: #F8BD01;
+  background-color: #EFF4FF;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  line-height: 2.80;
+}
