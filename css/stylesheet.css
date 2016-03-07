@@ -148,11 +148,17 @@ footer{
   height: 300px;
   background-color: #C9CDD6;
 }
-#footerinnhold{
+/*Første blokk i footer med tittel*/
+#footertittel{
   color: #F8BD01;
-  background-color: #EFF4FF;
+  background-color: #D4E5F0;
   width: 100%;
   height: 50px;
   text-align: center;
   line-height: 2.80;
+}
+#footerinnhold{
+  width: 800px;
+  height: 150px;
+  margin: auto;
 }
