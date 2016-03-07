@@ -158,7 +158,6 @@ footer{
 }
 /*Respektive sections i footer*/
 .intro{
-  background-color: #D4E5F0;
   float: left;
   padding: 1%;
   width: 25%;
@@ -176,7 +175,10 @@ footer{
   margin: auto;
   width: 1000px;
 }
-.some{
-  width: 40px;
-  height: 40px;
+.some, #twitter, #instagram, #linkedin{
+  width: 50px;
+  height: 50px;
+}
+#twitter:hover{
+  background-image: url("img/some/twitter-hoover.png");
 }
