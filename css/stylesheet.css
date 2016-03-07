@@ -69,13 +69,23 @@ Fiksa også web-kit columns for fin visuell effekt av bloggposter
 #blogg h2{
   padding-top: 3%;
 }
+
+.innhold #blogg{
+  display: -webkit-flex;
+  display: flex;
+}
+
 .bloggentry{
+  -webkit-flex: 1;
+  flex: 1;
+}
+
+.bloggbilde {
   display: inline-block;
   margin: 3%;
-  width: 300px;
-  height: 600px;
+  width: auto;
   text-align: left;
-  padding-top: 10%;
+  padding-top: 4%;
 }
 
 /*Section for om oss. det er den første section*/
@@ -101,6 +111,7 @@ Fiksa også web-kit columns for fin visuell effekt av bloggposter
 .bloggbilde {
   width: 300px;
   float: left;
+  margin: 0px 0px 15px 15px;
   padding-bottom: 2%;
 }
 
