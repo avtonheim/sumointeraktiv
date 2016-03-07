@@ -19,7 +19,7 @@ body {
 /*Heile header for menyen*/
 .meny {
   position: fixed;
-  min-width: 100vw;
+  width: 100vw;
   height: 60px;
   z-index: 5;
   /*background-color: #243536;*/
@@ -167,7 +167,7 @@ footer{
 #footertittel{
   color: #F8BD01;
   background-color: #CDD4DA;;
-  width: 100%;
+  width: 100vw;
   height: 50px;
   text-align: center;
   line-height: 3.20;
