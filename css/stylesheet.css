@@ -157,8 +157,16 @@ footer{
   text-align: center;
   line-height: 2.80;
 }
-#footerinnhold{
-  width: 800px;
+/*Respektive sections i footer*/
+.intro{
+  background-color: #D4E5F0;
+  display: inline-block;
+  width: 25%;
   height: 150px;
+  margin: 3%;
+}
+/*sentrerer sections*/
+#center{
   margin: auto;
+  width: 1000px;
 }
