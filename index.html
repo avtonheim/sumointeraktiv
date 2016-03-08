@@ -10,6 +10,12 @@
 </head>
 
 <script>
+$(document).ready(function(){
+
+        $("#siteloader")
+            .html('<object data="http://your-website-domain"/>');
+
+});
 document.addEventListener( "DOMContentLoaded", function() {
 
            var popcorn = Popcorn( "#protovideo" );
@@ -61,7 +67,8 @@ document.addEventListener( "DOMContentLoaded", function() {
         <p>Dette er en prototype på hvordan vår løsning fungerer. Klikk play for å teste den ut!</p>
       </section>
       <section id="footnote">
-        <img src="img/iphone.png" height="420" alt=""iphone simulering>
+        <section id="interaktiv"></section>
+        <img src="img/iphone.png" height="420" alt="iphone simulering">
         <p id="pop"></p>
       </section>
       <video id="protovideo" controls>

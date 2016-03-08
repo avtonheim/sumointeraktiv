@@ -217,3 +217,11 @@ footer{
   margin: 7% 0 0 0;
   font-size: 2em;
 }
+/*section over iphone IKKJE RØYR*/
+#interaktiv{
+  position: absolute;
+  margin: 46px 0 0 143.81px;
+  height: 327px;
+  width: 186px;
+  background-color: white;
+}
