@@ -10,10 +10,15 @@
 </head>
 
 <script>
+//henter inn webside frå veronicas domene fr uib
 $(document).ready(function(){
 
-        $("#siteloader")
-            .html('<object data="http://your-website-domain"/>');
+        $("#interaktiv")
+            .html('<object data="http://folk.uib.no/vha004/vimond/"/>');
+
+        $('object').css("width", "186px");
+        $('object').css("height", "327px");
+
 
 });
 document.addEventListener( "DOMContentLoaded", function() {
