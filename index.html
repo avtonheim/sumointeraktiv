@@ -4,17 +4,24 @@
   <meta charset="UTF-8">
   <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
   <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-  <link rel="python" type="python" href="py/send_sms.py">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+   <script src="http://popcornjs.org/code/dist/popcorn-complete.js"></script>
   <script src="js/script.js"></script>
 </head>
 
 <script>
-  $(document).ready(function () {
-    $("#protovideo").on('play', function () {
-      alert("Hei på deg! Prototypen er fremdeles under utvikling, men se gjerne videoen!")
-    });
-});
+document.addEventListener( "DOMContentLoaded", function() {
+
+           var popcorn = Popcorn( "#protovideo" );
+
+           popcorn.footnote({
+             start: 2,
+             end: 10,
+             target: "#pop",
+             text: "Hei på deg! No fungerer popcorn!"
+           });
+
+         }, false );
 </script>
 
 <body>
@@ -53,7 +60,11 @@
         <h2>Prototype</h2>
         <p>Dette er en prototype på hvordan vår løsning fungerer. Klikk play for å teste den ut!</p>
       </section>
-      <video id="protovideo" controls width="800" height="450">
+      <section id="footnote">
+        <img src="img/iphone.png" height="420" alt=""iphone simulering>
+        <p id="pop"></p>
+      </section>
+      <video id="protovideo" controls>
         <source src="video/prototypev2 meir kompr.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>

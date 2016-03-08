@@ -111,15 +111,16 @@ Altså høgre section*/
 
 /*Video tag for videoen i #prototype section*/
 video {
-  width: 800px;
-  margin-top: 30px;
-  margin-top: 7%;
+  width: 750px;
+  margin: 7% 0 0 4%;
+  float: left;
 }
 
 /*Section for video og prototype*/
 #prototype {
   text-align: center;
 	height: 800px;
+  width: 100vw;
   background-color: #262626;
 }
 
@@ -142,7 +143,7 @@ h2  {
 }
 
 /*Global regel for h3, h4, og h5*/
-  h3, h4, h5 {
+  h3, h4, h5, #footnote {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -207,4 +208,12 @@ footer{
 .some{
   width: 50px;
   height: 50px;
+}
+/*Target for popcorn tekst*/
+#footnote{
+  float: right;
+  width: 37%;
+  color: white;
+  margin: 7% 0 0 0;
+  font-size: 2em;
 }
