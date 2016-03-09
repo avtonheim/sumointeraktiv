@@ -42,7 +42,7 @@ document.addEventListener( "DOMContentLoaded", function() {
             start: popcorn.currentTime(),
             end: popcorn.currentTime() + 1  > popcorn.duration() ? popcorn.duration() : popcorn.currentTime() + 1,
             text: "Footnote at " + popcorn.currentTime() + " ",
-            target: "footnote"
+            target: "#aktivpause"
         });
     }
 });
@@ -87,10 +87,12 @@ document.addEventListener( "DOMContentLoaded", function() {
         <p>Dette er en prototype på hvordan vår løsning fungerer. Klikk play for å teste den ut!</p>
       </section>
       <section id="footnote">
+        <!--IKKJE RØYR denne skal ligge over iphone-->
         <section id="interaktiv"></section>
         <img src="img/iphone.png" height="420" alt="iphone simulering">
         <p id="pop"></p>
       </section>
+      <section id="aktivpause"></section>
       <video id="protovideo" controls>
         <source src="video/prototypev2 meir kompr.mp4" type="video/mp4">
         Your browser does not support the video tag.

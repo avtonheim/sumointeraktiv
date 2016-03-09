@@ -225,3 +225,10 @@ footer{
   width: 186px;
   background-color: white;
 }
+/*Her er det som ligg i aktiv pause når det blir trykka på pause i videoen*/
+#aktivpause{
+  width: 750px;
+  height: 340px;
+  position: absolute;
+  margin: 90px 0 0 50px;
+}
