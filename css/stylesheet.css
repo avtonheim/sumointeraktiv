@@ -227,8 +227,12 @@ footer{
 }
 /*Her er det som ligg i aktiv pause når det blir trykka på pause i videoen*/
 #aktivpause{
-  width: 750px;
+  width: 650px;
   height: 340px;
   position: absolute;
-  margin: 90px 0 0 50px;
+  margin: 140px 0 0 100px;
+}
+/*Biletet som kjem fram på aktiv pause*/
+#innhald{
+  width: 100%;
 }

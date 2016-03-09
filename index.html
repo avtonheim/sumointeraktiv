@@ -20,23 +20,24 @@ $(document).ready(function(){
         $('object').css("height", "327px");
 
 });
+//aktiv pause
 $(document).ready(function(){
   $("#innhald").hide();
-
 });
+
+//fikser fade out
 $(document).ready(function(){
-  var vid = document.getElementById("#protovideo");
-  var innhald = document.getElementById("#innhald");
-
-function playVid() {
-    vid.play();
-    innhald.hide();
-}
-
-function pauseVid() {
-    vid.pause();
-    innhald.show();
-}
+    $("#protovideo").on('play', function() {
+    //Actions when video play selected
+    $("#innhald").fadeOut(100);
+  });
+});
+//fikser pause med fade in
+  $(document).ready(function(){
+    $("#protovideo").on('pause', function() {
+    //Actions when video play selected
+    $("#innhald").fadeIn(100);
+  });
 });
 
 //fikser å legge inn tekst tima i videoen.
@@ -48,7 +49,14 @@ document.addEventListener( "DOMContentLoaded", function() {
              start: 2,
              end: 10,
              target: "#pop",
-             text: "Produktet blir lastet inn i din produktliste i Sumo appen."
+             text: "Produktet blir lagt inn i din produktliste i Sumo appen."
+           });
+
+           popcorn.footnote({
+             start: 11,
+             end: 15,
+             target: "#pop",
+             text: "Mens du ser vil produktene bli lagt til i produktlisten."
            });
 });
 </script>
