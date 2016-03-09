@@ -19,8 +19,27 @@ $(document).ready(function(){
         $('object').css("width", "186px");
         $('object').css("height", "327px");
 
+});
+$(document).ready(function(){
+  $("#innhald").hide();
 
 });
+$(document).ready(function(){
+  var vid = document.getElementById("#protovideo");
+  var innhald = document.getElementById("#innhald");
+
+function playVid() {
+    vid.play();
+    innhald.hide();
+}
+
+function pauseVid() {
+    vid.pause();
+    innhald.show();
+}
+});
+
+//fikser å legge inn tekst tima i videoen.
 document.addEventListener( "DOMContentLoaded", function() {
 
            var popcorn = Popcorn( "#protovideo" );
@@ -31,23 +50,7 @@ document.addEventListener( "DOMContentLoaded", function() {
              target: "#pop",
              text: "Produktet blir lastet inn i din produktliste i Sumo appen."
            });
-
-           popcorn.on( "timeupdate", function( event ) {
-
-    // if the video is paused
-    if ( this.paused() ) {
-
-        // add a footnote!
-        this.footnote({
-            start: popcorn.currentTime(),
-            end: popcorn.currentTime() + 1  > popcorn.duration() ? popcorn.duration() : popcorn.currentTime() + 1,
-            text: "Footnote at " + popcorn.currentTime() + " ",
-            target: "#aktivpause"
-        });
-    }
 });
-
-         }, false );
 </script>
 
 <body>
@@ -92,7 +95,7 @@ document.addEventListener( "DOMContentLoaded", function() {
         <img src="img/iphone.png" height="420" alt="iphone simulering">
         <p id="pop"></p>
       </section>
-      <section id="aktivpause"></section>
+      <section id="aktivpause"><img id="innhald" src="img/aktivpause.png"></section>
       <video id="protovideo" controls>
         <source src="video/prototypev2 meir kompr.mp4" type="video/mp4">
         Your browser does not support the video tag.
