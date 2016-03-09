@@ -32,7 +32,7 @@ document.addEventListener( "DOMContentLoaded", function() {
              text: "Hei på deg! No fungerer popcorn!"
            });
 
-           popcorn.listen( "timeupdate", function( event ) {
+           popcorn.on( "timeupdate", function( event ) {
 
     // if the video is paused
     if ( this.paused() ) {
