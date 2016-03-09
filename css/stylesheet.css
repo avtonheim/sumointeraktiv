@@ -178,7 +178,7 @@ footer{
 }
 
 .toppen {
-  margin-top: -70px;
+  margin: -70px 50px 0 0;
   float: right;
   width: 100px;
 }
