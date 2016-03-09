@@ -5,7 +5,7 @@
   <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
   <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-   <script src="http://popcornjs.org/code/dist/popcorn-complete.js"></script>
+  <script src="http://popcornjs.org/code/dist/popcorn-complete.js"></script>
   <script src="js/script.js"></script>
 </head>
 
@@ -31,6 +31,21 @@ document.addEventListener( "DOMContentLoaded", function() {
              target: "#pop",
              text: "Hei på deg! No fungerer popcorn!"
            });
+
+           popcorn.listen( "timeupdate", function( event ) {
+
+    // if the video is paused
+    if ( this.paused() ) {
+
+        // add a footnote!
+        this.footnote({
+            start: popcorn.currentTime(),
+            end: popcorn.currentTime() + 1  > popcorn.duration() ? popcorn.duration() : popcorn.currentTime() + 1,
+            text: "Footnote at " + popcorn.currentTime() + " ",
+            target: "footnote"
+        });
+    }
+});
 
          }, false );
 </script>
