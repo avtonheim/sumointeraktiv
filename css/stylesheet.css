@@ -217,14 +217,6 @@ footer{
   margin: 7% 0 0 0;
   font-size: 2em;
 }
-/*section over iphone IKKJE RØYR*/
-#interaktiv{
-  position: absolute;
-  margin: 46px 0 0 143.81px;
-  height: 327px;
-  width: 186px;
-  background-color: white;
-}
 /*Her er det som ligg i aktiv pause når det blir trykka på pause i videoen*/
 #aktivpause{
   width: 650px;
@@ -235,4 +227,12 @@ footer{
 /*Biletet som kjem fram på aktiv pause*/
 #innhald{
   width: 100%;
+}
+/*Fikser interaktiv mobil IKKJE RØYR*/
+iframe{
+  border: none;
+  width: 186px;
+  height: 327px;
+  position: absolute;
+  margin: 46px 0 0 -93.5px;
 }
