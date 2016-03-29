@@ -7,76 +7,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <script src="http://popcornjs.org/code/dist/popcorn-complete.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/jquery.js"></script>
 </head>
-
-<script>
-//henter inn webside frå veronicas domene fra uib
-//$(document).ready(function(){
-
-      //  $("#interaktiv")
-        //    .html('<object data="http://folk.uib.no/vha004/vimond/"/>');
-
-        //$('object').css("width", "186px");
-        //$('object').css("height", "327px");
-
-//});
-//aktiv pause
-$(document).ready(function(){
-  $("#innhald").hide();
-});
-
-
-//fikser fade out
-$(document).ready(function(){
-    $("#protovideo").on('play', function() {
-    //Actions when video play selected
-    $("#innhald").fadeOut(100);
-  });
-});
-//fikser pause med fade in
-  $(document).ready(function(){
-    $("#protovideo").on('pause', function() {
-    //Actions when video play selected
-    $("#innhald").fadeIn(100);
-  });
-});
-
-//fikser å legge inn tekst tima i videoen.
-document.addEventListener( "DOMContentLoaded", function() {
-
-           var popcorn = Popcorn( "#protovideo" );
-
-           popcorn.footnote({
-             start: 2,
-             end: 10,
-             target: "#pop",
-             text: "Produktet blir lagt inn i din produktliste i Sumo appen."
-           });
-
-           popcorn.footnote({
-             start: 11,
-             end: 15,
-             target: "#pop",
-             text: "Mens du ser vil produktene bli lagt til i produktlisten."
-           });
-
-           popcorn.footnote({
-             start: 20,
-             end: 28,
-             target: "#pop",
-             text: "Nå ser du at det nye albumet til Aurora er lagt til i produktlisten."
-           });
-
-           popcorn.footnote({
-             start: 29,
-             end: 35,
-             target: "#pop",
-             text: "Prøv å legge albumet til i huskelisten ved å klikke på stjernen!"
-           });
-});
-
-
-</script>
 
 <body>
 	<header class="meny">
