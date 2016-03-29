@@ -51,8 +51,6 @@ $(document).ready(function(){
   $("#aurora").hide();
 });
 
-
-
 //Fikser aktiv pause
 $(document).ready(function () {
   $("#innhald").hide();
@@ -62,9 +60,6 @@ $(document).ready(function () {
   });
   $("#protovideo").on('play', function() {
     $("#innhald").fadeOut(100);
-  });
-  $("#protovideo").on('play', function() {
-    $("#aurora").show(2000);
   });
 });
 
@@ -93,8 +88,14 @@ document.addEventListener( "DOMContentLoaded", function() {
              start: 20,
              end: 28,
              target: "#pop",
-             text: "Nå ser du at det nye albumet til Aurora er lagt til i produktlisten."
+             text: "Nå ser du at det nye albumet til Aurora er lagt til i produktlisten.",
            });
+
+           popcorn.footnote({
+             start: 20,
+             target: "#aurora"
+           });
+
 
            popcorn.footnote({
              start: 29,
