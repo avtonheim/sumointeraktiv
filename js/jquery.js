@@ -45,28 +45,26 @@ $(document).ready(function () {
         //$('object').css("height", "327px");
 
 //});
-//aktiv pause
-$(document).ready(function(){
+$(document).ready(function () {
   $("#innhald").hide();
   $("#aurora").hide();
 });
 
 
 
+
 //Fikser aktiv pause
 $(document).ready(function () {
-  $("#innhald").hide();
-
   $("#protovideo").on('pause', function() {
     $("#innhald").fadeIn(100);
   });
   $("#protovideo").on('play', function() {
     $("#innhald").fadeOut(100);
     setTimeout(function() {
-          // Do something after 3 seconds
-          // This can be direct code, or call to some other function
-         alert("Hei på deg!");
-         $("#aurora").fadeIn();
+         $(document).ready(function () {
+           $("#aurora").show();
+           alert("hei");
+       });
        }, 3000);
   });
 });
