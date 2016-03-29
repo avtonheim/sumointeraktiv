@@ -31,25 +31,20 @@ $(document).ready(function () {
   });
 });
 
-//FOR INTERAKTIV.HTML
 
-//For index.HTML
-
-//henter inn webside frå veronicas domene fra uib
-//$(document).ready(function(){
-
-      //  $("#interaktiv")
-        //    .html('<object data="http://folk.uib.no/vha004/vimond/"/>');
-
-        //$('object').css("width", "186px");
-        //$('object').css("height", "327px");
-
-//});
 $(document).ready(function () {
   $("#innhald").hide();
   $("#aurora").hide();
-});
 
+//seier at pauseinnslag skal avspelast 30 minutt etter å ha trykka på playknapp
+
+
+	        setTimeout(
+	            function () {
+	            $("#aurora").show();
+	            },
+	            30000);  //3 sek skal det visast
+	    });
 
 
 
@@ -57,15 +52,11 @@ $(document).ready(function () {
 $(document).ready(function () {
   $("#protovideo").on('pause', function() {
     $("#innhald").fadeIn(100);
+
   });
   $("#protovideo").on('play', function() {
     $("#innhald").fadeOut(100);
-    setTimeout(function() {
-         $(document).ready(function () {
-           $("#aurora").show();
-           alert("hei");
-       });
-       }, 3000);
+
   });
 });
 
