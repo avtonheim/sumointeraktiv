@@ -37,15 +37,10 @@ $(document).ready(function () {
   $("#aurora").hide();
 
 //seier at pauseinnslag skal avspelast 30 minutt etter å ha trykka på playknapp
-
-
-	        setTimeout(
-	            function () {
-	            $("#aurora").show();
-	            },
-	            30000);  //3 sek skal det visast
-	    });
-
+$("#protovideo").on('play', function() {
+   $("#aurora").delay().show(3000);
+ });
+});
 
 
 //Fikser aktiv pause
