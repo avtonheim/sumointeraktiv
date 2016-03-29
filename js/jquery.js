@@ -10,23 +10,15 @@ $(document).ready(function () {
   });
 });
 
-$( document ).on( "play", "protovideo", function() {
-  alert( "Goodbye!" );  // jQuery 1.7+
-});
-
 //funksjon for å vise at ting blir lagt til i produktlista
+//Fikser animasjonting
 $(document).ready(function () {
   $("#detskjer2").hide();
-  $("#aurora").hide();
 
   $("#før2").click(function () {
     $("#før2").hide();
     $("#detskjer2").fadeIn();
   });
-});
-
-$(document).ready(function () {
-  $("#aurora").show(20000);
 });
 
 
@@ -56,23 +48,26 @@ $(document).ready(function () {
 //aktiv pause
 $(document).ready(function(){
   $("#innhald").hide();
+  $("#aurora").hide();
 });
 
 
-//fikser fade out
-$(document).ready(function(){
-    $("#protovideo").on('play', function() {
-    //Actions when video play selected
-    $("#innhald").fadeOut(100);
-  });
-});
-//fikser pause med fade in
-  $(document).ready(function(){
-    $("#protovideo").on('pause', function() {
-    //Actions when video play selected
+
+//Fikser aktiv pause
+$(document).ready(function () {
+  $("#innhald").hide();
+
+  $("#protovideo").on('pause', function() {
     $("#innhald").fadeIn(100);
   });
+  $("#protovideo").on('play', function() {
+    $("#innhald").fadeOut(100);
+  });
+  $("#protovideo").on('play', function() {
+    $("#aurora").show(2000);
+  });
 });
+
 
 
 //fikser å legge inn tekst tima i videoen.
