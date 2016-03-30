@@ -1,4 +1,16 @@
-//FOR INTERAKTIV.HTML
+
+$(document).ready(function () {
+  $("#innhald").hide();
+  $("#aurora").hide();
+});
+
+ //funksjon for å vise at ting blir lagt til i produktlista
+ $(document).ready(function () {
+   $("#startknapp").click(function () {
+    $("#aurora").show();
+   });
+ });
+
 
 //funksjon for å vise at ting blir lagt til i produktlista
 $(document).ready(function () {
@@ -31,16 +43,6 @@ $(document).ready(function () {
   });
 });
 
-
-$(document).ready(function () {
-  $("#innhald").hide();
-  $("#aurora").hide();
-
-//seier at pauseinnslag skal avspelast 30 minutt etter å ha trykka på playknapp
-$("#protovideo").on('play', function() {
-   $("#aurora").delay().show(3000);
- });
-});
 
 
 //Fikser aktiv pause
