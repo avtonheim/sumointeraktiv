@@ -1,15 +1,20 @@
 
+
 $(document).ready(function () {
   $("#innhald").hide();
   $("#aurora").hide();
 });
 
- //funksjon for å vise at ting blir lagt til i produktlista
- $(document).ready(function () {
-   $("#startknapp").click(function () {
-    $("#aurora").show();
-   });
- });
+//fikser å vise aurora etter å ha trykka play.
+$(document).ready(function(){
+$("#protovideo").on('play', function() {
+	        setTimeout(
+	            function () {
+                var aur =  $("#vanskelig").contents().find("#aurora") //for å finne aurora i iframe
+                $(aur).show();
+              }, 30000); //30 sek
+	    });
+});
 
 
 //funksjon for å vise at ting blir lagt til i produktlista
