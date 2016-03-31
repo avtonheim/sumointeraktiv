@@ -3,25 +3,33 @@ $(document).ready(function(){
   $("#skjorte").hide();
   $("#skjorteprodukt").hide();
   $("#auroraprodukt").hide();
+  $(".container").hide();
+  $("#2").hide();
+
 
 //funksjon for å vise at ting blir lagt til i produktlista
-  $("#detskjer1").hide();
+  $("#detskjer1").hide(); //skjuler skjorte fav-knapp
   $("#før1").click(function () {
     $("#før1").hide();
     $("#detskjer1").fadeIn();
   });
 
+//fikser kjøp nå i skjorte med hide/show av innhald
+$("#skjortekjop").click(function () {
+  $("#tittelfront").hide();
+  $("#skjorteprodukt").show();
+});
+
+//fikser å vise produktlista fra skjortekjop
+$("#tilbakeknapp1").click(function () {
+  $("#tittelfront").show();
+  $("#skjorteprodukt").hide();
+});
 
 //funksjon for å vise at ting blir lagt til i produktlista
 //Fikser animasjonting
 
   $("#detskjer2").hide();
-  $("#før2").click(function () {
-    $("#før2").hide();
-    $("#detskjer2").fadeIn();
-  });
-
-
 //meny fiksing
   $(".container").hide();
   $("#hamburger-nav").click(function () {
@@ -46,9 +54,6 @@ $(document).ready(function(){
 
 
     //pil til venstre
-      $(".container").hide();
-      $("#2").hide();
-
       $("#pil-left").click(function () {
         $("#1").hide();
         $("#2").show();

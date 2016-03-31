@@ -97,6 +97,10 @@ header a{
   border-width: medium;
   border-color: #B5B0B0;
 }
+#skjorteprodukt, #auroraprodukt {
+  position: absolute;
+  background-color: #D1D1D1;
+}
 
 /*.produktliste p*/
 #infotekst {
@@ -187,6 +191,52 @@ button {
 /*Kul hover effekt*/
 button:hover {
   background-color: #f89f1d;
+}
+
+.overskrift {
+  width: 95%;
+  margin: auto;
+  text-align: center;
+}
+
+#tilbakeknapp {
+  padding-left: 3%;
+  padding-top: 3%;
+}
+
+.tabellvenstre {
+  float: left;
+  width: 45%;
+  padding: 10px;
+  /*margin-top: 10px;*/
+  text-align: center;
+}
+.knapperprod1, .knapperprod2 {
+  float: right;
+  width: 45%;
+  padding: 1px;
+}
+.knaperprod1{
+  margin-top: 30px;
+}
+#bildeknapperprod1 {
+  margin-top: -55%;
+  margin-left: 10%;
+}
+#bildeknapperprod2{
+  margin-left: 10%;
+}
+#knapperprod1 h3{
+  font-size: 0.8em;
+}
+
+table, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin-left: 4px;
+}
+td {
+  padding: 8px;
 }
 
 /*Fikser view på prototypen som visast på produksjonsrapporten*/
