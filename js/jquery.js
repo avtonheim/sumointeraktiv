@@ -21,7 +21,6 @@ $(document).ready(function(){
   });
 
 
-
 //meny fiksing
   $(".container").hide();
   $("#hamburger-nav").click(function () {
@@ -39,17 +38,10 @@ $(document).ready(function(){
 
   });
 
-// Check browser support
-if (typeof(Storage) !== "undefined") {
-    // Store
-    localStorage.setItem("produkt", "1");
-
-} else {
-    document.getElementById("pop").innerHTML = "Sorry, your browser does not support Web Storage...";
-}
 });
 //fikser å legge inn tekst tima i videoen.
 document.addEventListener( "DOMContentLoaded", function() {
+
 
            var popcorn = Popcorn( "#protovideo" );
 
@@ -57,54 +49,83 @@ document.addEventListener( "DOMContentLoaded", function() {
              start: 2,
              end: 10,
              target: "#pop",
-             text: "Produktet blir lagt inn i din produktliste i Sumo appen."
+             text: "Gjennom denne simuleringen vil du se et klipp som illustrerer vår nye løsning med second screen"
            });
 
            popcorn.footnote({
-             start: 11,
-             end: 15,
+             start: 15,
+             end: 25,
              target: "#pop",
-             text: "Mens du ser vil produktene bli lagt til i produktlisten."
+             text: "Produkt blir lagt inn i din produktliste i Sumo appen mens du ser i sanntid."
            });
 
            popcorn.footnote({
              start: 30,
-             end: 38,
+             end: 40,
+             target: "#pop",
+             text: "Ser du noe du liker? Hva med å sjekke ut skjorten som Harald Rønneberg bruker?"
+           });
+
+           popcorn.footnote({
+             start: 42,
+             end: 48,
+             target: "#pop",
+             text: "Prøv å legge skjorten til i huskelisten ved å klikke på stjernen!"
+
+           });
+
+           popcorn.footnote({
+             start: 50,
+             end: 60,
              target: "#pop",
              text: "Nå ser du at det nye albumet til Aurora er lagt til i produktlisten."
            });
 
-           var pop = Popcorn( "#protovideo" );
 
            //Legger til skjorte med id 1
-           pop.code({
+           popcorn.code({
              start: 5, //5 sekund så kjem den fram
+             end: 263, //blir vis heile tida til videoen sluttar
              onStart: function( options ) {
-               //document.getElementById("pop").innerHTML = localStorage.getItem("produkt");
                var skjorte = $("#vanskelig").contents().find("#skjorte");
-               $(skjorte).show();
+               localStorage.setItem("produkt", "1"); //setter produktid
+               var v = localStorage.getItem("produkt"); //henter produktid
+               if (v == "1") { // Check if it's equal to the string true
+                  $(skjorte).show();
+                  console.log("No er produktet vist");
+               }
+             },
+             onEnd: function( options ) {
+                  var skjorte = $("#vanskelig").contents().find("#skjorte");
+                  localStorage.removeItem("1");
+                  $(skjorte).hide(); // vi vil slette localStorage når vi går tilbake til tidslinja
+                  console.log("sletta produktet");
+
              }
            });
 
         //Legger til Aurora med id 2
-          pop.code({
-            start: 30, //30 sekund så kjem den fram.
+          popcorn.code({
+            start: 50, //30 sekund så kjem den fram.
+            end: 263, //blir vis heile tida til videoen sluttar
             onStart: function( options ) {
-              //document.getElementById("pop").innerHTML = localStorage.getItem("produkt");
+
+              localStorage.setItem("produkt", "2");
               var aur =  $("#vanskelig").contents().find("#aurora"); //for å finne aurora i iframe
-              $(aur).show();
-            }
+              var v = localStorage.getItem("produkt"); //henter produktid
+              if (v == "2") { // Check if it's equal to the string true
+                 $(aur).show();
+                 console.log("No er produktet vist");
+               }
+              },
+              onEnd: function( options ) {
+                   var aur = $("#vanskelig").contents().find("#aurora");
+                   localStorage.removeItem("2");
+                   $(aur).hide(); // vi vil slette localStorage når vi går tilbake til tidslinja
+                   console.log("sletta produktet");
+
+              }
+
           });
 
-
-
-           popcorn.footnote({
-             start: 40,
-             end: 48,
-             target: "#pop",
-             text: "Prøv å legge albumet til i huskelisten ved å klikke på stjernen!"
-
-           });
 });
-
-//For index.HTML
