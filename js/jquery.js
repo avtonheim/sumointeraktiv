@@ -38,6 +38,12 @@ $(document).ready(function(){
 
   });
 
+  //for å fikse produktlista
+  $("#tilbake").click(function () {
+    var skjorte = $("#vanskelig").contents().find("#skjorte");
+    $("skjorte").show();
+  });
+
 });
 //fikser å legge inn tekst tima i videoen.
 document.addEventListener( "DOMContentLoaded", function() {
@@ -89,15 +95,14 @@ document.addEventListener( "DOMContentLoaded", function() {
              onStart: function( options ) {
                var skjorte = $("#vanskelig").contents().find("#skjorte");
                localStorage.setItem("produkt", "1"); //setter produktid
-               var v = localStorage.getItem("produkt"); //henter produktid
-               if (v == "1") { // Check if it's equal to the string true
+               if (localStorage.getItem("produkt") == "1") { // sjekker om skjorta skal visast
                   $(skjorte).show();
                   console.log("No er produktet vist");
                }
              },
              onEnd: function( options ) {
                   var skjorte = $("#vanskelig").contents().find("#skjorte");
-                  localStorage.removeItem("1");
+                  localStorage.removeItem("produkt", "1");
                   $(skjorte).hide(); // vi vil slette localStorage når vi går tilbake til tidslinja
                   console.log("sletta produktet");
 
@@ -112,15 +117,14 @@ document.addEventListener( "DOMContentLoaded", function() {
 
               localStorage.setItem("produkt", "2");
               var aur =  $("#vanskelig").contents().find("#aurora"); //for å finne aurora i iframe
-              var v = localStorage.getItem("produkt"); //henter produktid
-              if (v == "2") { // Check if it's equal to the string true
+              if (localStorage.getItem("produkt") == "2") { // sjekker om aurora skal visast
                  $(aur).show();
                  console.log("No er produktet vist");
                }
               },
               onEnd: function( options ) {
                    var aur = $("#vanskelig").contents().find("#aurora");
-                   localStorage.removeItem("2");
+                   localStorage.removeItem("produkt", "2");
                    $(aur).hide(); // vi vil slette localStorage når vi går tilbake til tidslinja
                    console.log("sletta produktet");
 
