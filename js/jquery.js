@@ -1,7 +1,8 @@
 $(document).ready(function(){
   $("#aurora").hide();
   $("#skjorte").hide();
-
+  $("#skjorteprodukt").hide();
+  $("#auroraprodukt").hide();
 
 //funksjon for å vise at ting blir lagt til i produktlista
   $("#detskjer1").hide();
@@ -38,11 +39,32 @@ $(document).ready(function(){
 
   });
 
-  //for å fikse produktlista
-  $("#tilbake").click(function () {
-    var skjorte = $("#vanskelig").contents().find("#skjorte");
-    $("skjorte").show();
+
+  $(".kjopknappprodukt").click(function () {
+    alert("Denne funksjonen er ikke støttet enda. Prøv igjen senere");
   });
+
+
+    //pil til venstre
+      $(".container").hide();
+      $("#2").hide();
+
+      $("#pil-left").click(function () {
+        $("#1").hide();
+        $("#2").show();
+      });
+
+      //pil til høgre
+
+      $("#pil-right").click(function () {
+        $("#1").show();
+        $("#2").hide();
+      });
+//meny fiksing
+
+    $("#hamburger-nav").click(function () {
+        $(".container").toggle();
+      });
 
 });
 //fikser å legge inn tekst tima i videoen.
