@@ -14,6 +14,13 @@ $(document).ready(function(){
     $("#detskjer1").fadeIn();
   });
 
+  //funksjon for å vise at ting blir lagt til i produktlista
+    $("#detskjer12").hide(); //skjuler skjorte fav-knapp
+    $("#før12").click(function () {
+      $("#før12").hide();
+      $("#detskjer12").fadeIn();
+    });
+
 //fikser kjøp nå i skjorte med hide/show av innhald
 $("#skjortekjop").click(function () {
   $("#tittelfront").hide();
