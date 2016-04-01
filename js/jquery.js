@@ -13,12 +13,6 @@ $(document).ready(function() {
   $("#varsel").hide(); //skjuler bakgrunnsbilete frå iPhone
 
 
-  $("#lastskjerm").click(function() {
-    $("#lastskjerm").hide();
-    $("#varsel").show();
-  });
-
-
   //funksjon for å vise at ting blir lagt til i produktlista
   $("#før1").click(function() {
     $("#før1").hide();
@@ -208,9 +202,26 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
 
+
+  popcorn.code({
+    start: 3, //3 sekund så kjem den fram
+    end: 263, //blir vis heile tida til videoen sluttar
+    onStart: function(options) {
+      var lastskjerm = $("#vanskelig").contents().find("#lastskjerm");
+      var varsel = $("#vanskelig").contents().find("#varsel");
+        $(lastskjerm).trigger( "click" );
+        $(lastskjerm).hide();
+        $(varsel).show();
+    },
+    onEnd: function(options) {
+      var skjorte = $("#vanskelig").contents().find("#skjorte");
+      $(skjorte).fadeOut(50);
+    }
+  });
+
   //Legger til skjorte med id 1
   popcorn.code({
-    start: 5, //5 sekund så kjem den fram
+    start: 20, //20 sekund så kjem den fram
     end: 263, //blir vis heile tida til videoen sluttar
     onStart: function(options) {
       var skjorte = $("#vanskelig").contents().find("#skjorte");
