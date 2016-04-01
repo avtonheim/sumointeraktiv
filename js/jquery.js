@@ -10,7 +10,7 @@ $(document).ready(function() {
   $("#detskjer12").hide(); //skjuler skjorte fav-knapp i produktsida
   $("#detskjer21").hide(); //skjuler aurora fav-knapp i produktsida
   $("#detskjer2").hide(); //skjuler aurora fav-knapp
-  $("#varsel").hide(); //skjuler bakgrunnsbilete frå iPhone
+  $("#varseltv2").hide(); //skjuler bakgrunnsbilete frå iPhone
 
 
   //funksjon for å vise at ting blir lagt til i produktlista
@@ -202,20 +202,17 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
 
-
+  //Fikser trigger klikk av varsel
   popcorn.code({
     start: 3, //3 sekund så kjem den fram
-    end: 263, //blir vis heile tida til videoen sluttar
+    end: 263, //blir vist heile tida til videoen sluttar
     onStart: function(options) {
       var lastskjerm = $("#vanskelig").contents().find("#lastskjerm");
-      var varsel = $("#vanskelig").contents().find("#varsel");
+      var varseltv2 = $("#vanskelig").contents().find("#varseltv2");
         $(lastskjerm).trigger( "click" );
-        $(lastskjerm).hide();
-        $(varsel).show();
-    },
-    onEnd: function(options) {
-      var skjorte = $("#vanskelig").contents().find("#skjorte");
-      $(skjorte).fadeOut(50);
+        $(lastskjerm).css("background-image", "url(img/bakgrunniphone.png)");
+        $(lastskjerm).css("background-size", "186px", "100vh");
+        $(varseltv2).show();
     }
   });
 
