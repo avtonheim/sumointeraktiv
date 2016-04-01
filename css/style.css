@@ -248,17 +248,15 @@ td {
 /*Låst skjerm første som skjer*/
 #lastskjerm{
   background-color: black;
-  position: absolute;
   height: 100vh;
   width: 100vw;
 }
 #varseltv2{
   position: absolute;
-  z-index: 110;
   width: 186px;
-  height: 20px;
+  height: 50px;
   background-color: black;
-  margin-top: 50px;
+  margin-top: 130px;
 }
 /*Fikser view på prototypen som visast på produksjonsrapporten*/
 @media only screen and (min-width: 186px) and (max-width: 186px) {

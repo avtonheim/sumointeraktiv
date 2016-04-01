@@ -11,6 +11,8 @@ $(document).ready(function() {
   $("#detskjer21").hide(); //skjuler aurora fav-knapp i produktsida
   $("#detskjer2").hide(); //skjuler aurora fav-knapp
   $("#varseltv2").hide(); //skjuler bakgrunnsbilete frå iPhone
+  $("#produktlistemain").hide(); //skjuler heile main produktliste. skal visast etter varsel simuleringa
+
 
 
   //funksjon for å vise at ting blir lagt til i produktlista
@@ -209,10 +211,12 @@ document.addEventListener("DOMContentLoaded", function() {
     onStart: function(options) {
       var lastskjerm = $("#vanskelig").contents().find("#lastskjerm");
       var varseltv2 = $("#vanskelig").contents().find("#varseltv2");
+      var head = $("#vanskelig").contents().find("#head");
         $(lastskjerm).trigger( "click" );
         $(lastskjerm).css("background-image", "url(img/bakgrunniphone.png)");
         $(lastskjerm).css("background-size", "186px", "100vh");
         $(varseltv2).show();
+        
     }
   });
 
