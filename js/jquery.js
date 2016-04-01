@@ -10,6 +10,14 @@ $(document).ready(function() {
   $("#detskjer12").hide(); //skjuler skjorte fav-knapp i produktsida
   $("#detskjer21").hide(); //skjuler aurora fav-knapp i produktsida
   $("#detskjer2").hide(); //skjuler aurora fav-knapp
+  $("#varsel").hide(); //skjuler bakgrunnsbilete frå iPhone
+
+
+  $("#lastskjerm").click(function() {
+    $("#lastskjerm").hide();
+    $("#varsel").show();
+  });
+
 
   //funksjon for å vise at ting blir lagt til i produktlista
   $("#før1").click(function() {
@@ -113,6 +121,7 @@ $(document).ready(function() {
   });
 
 
+
   //pil til venstre i skjorte
   $("#pil-left").click(function() {
     $("#1").toggle();
@@ -194,7 +203,7 @@ document.addEventListener("DOMContentLoaded", function() {
     start: 80,
     end: 90,
     target: "#pop",
-    text: "Trenger du å gjøre noe mens du ser på kan du trykke 'pause' og produktlisten vises uten å avbryte deg når du ser på favorittprogrammet ditt."
+    text: "Trenger du å gjøre noe mens du ser på kan du trykke 'pause' og produktlisten vises uten å avbryte deg når du ser på favorittprogrammet ditt. "
 
   });
 

@@ -245,7 +245,21 @@ table, td {
 td {
   padding: 8px;
 }
-
+/*Låst skjerm første som skjer*/
+#lastskjerm{
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+#varsel{
+  position: absolute;
+  width: 100%;
+  height: 100%
+}
+#varsel img {
+  width: 100%
+}
 /*Fikser view på prototypen som visast på produksjonsrapporten*/
 @media only screen and (min-width: 186px) and (max-width: 186px) {
   #logo {
