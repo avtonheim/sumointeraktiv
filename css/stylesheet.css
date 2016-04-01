@@ -246,7 +246,8 @@ iframe{
 }
 #pop{
   font-size: 1.3em;
-  text-align: center;
+  line-height: 150%;
+  text-align: left;
   color: white;
   font-family: sans-serif 'helvetica', 'arial';
 }
