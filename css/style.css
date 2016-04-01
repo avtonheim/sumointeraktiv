@@ -156,16 +156,16 @@ header a{
 }
 
 /*fikser bildegalleri med piler*/
-#pil-left, #pil-right {
+.pilvenstre, .pilhorge {
   margin-top: 26%;
   padding: 2%;
   height: 30px;
   width: 30px;
 }
-#pil-right {
+.pilhogre {
   float: left;
 }
-#pil-left {
+.pilvenstre {
   float: right;
 }
 

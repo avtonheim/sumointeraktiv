@@ -1,25 +1,36 @@
 $(document).ready(function(){
-  $("#aurora").hide();
-  $("#skjorte").hide();
-  $("#skjorteprodukt").hide();
-  $("#auroraprodukt").hide();
+  $("#aurora").hide(); // aurora i huskelista
+  $("#skjorte").hide(); //skjorte i huskelista
+  $("#skjorteprodukt").hide();  //sjølve produktsida for skjorta
+  $("#auroraprodukt").hide(); //sjølve produktsida for aurora
   $(".container").hide();
-  $("#2").hide();
-
+  $("#2").hide(); //skjortebilde i produktsida
+  $("#4").hide(); //albumbilete i produktsida
+  $("#detskjer1").hide(); //skjuler skjorte fav-knapp
+  $("#detskjer2").hide(); //skjuler aurora fav-knapp
 
 //funksjon for å vise at ting blir lagt til i produktlista
-  $("#detskjer1").hide(); //skjuler skjorte fav-knapp
   $("#før1").click(function () {
     $("#før1").hide();
-    $("#detskjer1").fadeIn();
+    $("#detskjer1").show();
+  });
+ //for å ta vekk stjerna frå lista
+  $("#detskjer1").click(function () {
+    $("#før1").show();
+    $("#detskjer1").hide();
   });
 
   //funksjon for å vise at ting blir lagt til i produktlista
-    $("#detskjer12").hide(); //skjuler skjorte fav-knapp
-    $("#før12").click(function () {
-      $("#før12").hide();
-      $("#detskjer12").fadeIn();
+    $("#før2").click(function () {
+      $("#før2").hide();
+      $("#detskjer2").show();
     });
+    
+    //funksjon for å vise at ting blir lagt til i produktlista
+      $("#detskjer2").click(function () {
+        $("#før2").show();
+        $("#detskjer2").hide();
+      });
 
 //fikser kjøp nå i skjorte med hide/show av innhald
 $("#skjortekjop").click(function () {
@@ -32,6 +43,20 @@ $("#tilbakeknapp1").click(function () {
   $("#tittelfront").show();
   $("#skjorteprodukt").hide();
 });
+
+//fikser kjøp nå i Aurora med hide/show av innhald
+$("#aurorakjop").click(function () {
+  $("#tittelfront").hide();
+  $("#auroraprodukt").show();
+});
+
+//fikser å vise produktlista fra Aurora kjop
+$("#tilbakeknapp2").click(function () {
+  $("#tittelfront").show();
+  $("#auroraprodukt").hide();
+});
+
+
 
 //funksjon for å vise at ting blir lagt til i produktlista
 //Fikser animasjonting
@@ -60,18 +85,30 @@ $("#tilbakeknapp1").click(function () {
   });
 
 
-    //pil til venstre
+    //pil til venstre i skjorte
       $("#pil-left").click(function () {
-        $("#1").hide();
-        $("#2").show();
+        $("#1").toggle();
+        $("#2").toggle();
       });
 
-      //pil til høgre
-
+      //pil til høgre i skjorte
       $("#pil-right").click(function () {
-        $("#1").show();
-        $("#2").hide();
+        $("#1").toggle();
+        $("#2").toggle();
       });
+
+      //pil til venstre i aurora
+      $("#pil-left1").click(function () {
+        $("#3").toggle();
+        $("#4").toggle();
+      });
+
+        //pil til høgre i aurora
+      $("#pil-right2").click(function () {
+        $("#3").toggle();
+        $("#4").toggle();
+      });
+
 //meny fiksing
 
     $("#hamburger-nav").click(function () {
