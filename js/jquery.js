@@ -206,7 +206,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   //Fikser trigger klikk av varsel
   popcorn.code({
-    start: 3, //3 sekund så kjem den fram
+    start: 4, //3 sekund så kjem den fram
     end: 263, //blir vist heile tida til videoen sluttar
     onStart: function(options) {
       var lastskjerm = $("#vanskelig").contents().find("#lastskjerm");
@@ -216,9 +216,27 @@ document.addEventListener("DOMContentLoaded", function() {
         $(lastskjerm).css("background-image", "url(img/bakgrunniphone.png)");
         $(lastskjerm).css("background-size", "186px", "100vh");
         $(varseltv2).show();
-        
     }
   });
+
+  //Fikser trigger klikk av varsel
+    popcorn.code({
+      start: 9, //3 sekund så kjem den fram
+      end: 263, //blir vist heile tida til videoen sluttar
+      onStart: function(options) {
+        var lastskjerm = $("#vanskelig").contents().find("#lastskjerm");
+        var varseltv2 = $("#vanskelig").contents().find("#varseltv2");
+        var head = $("#vanskelig").contents().find("#head");
+        var main = $("#vanskelig").contents().find("#produktlistemain");
+          $(varseltv2).trigger( "click" );
+            $(varseltv2).animate({width: 'toggle'});
+            $(lastskjerm).hide();
+            $(main).show();
+      }
+  });
+
+
+
 
   //Legger til skjorte med id 1
   popcorn.code({
