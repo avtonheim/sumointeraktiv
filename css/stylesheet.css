@@ -119,12 +119,12 @@ video {
 /*Section for video og prototype*/
 #prototype {
   text-align: center;
-	height: 800px;
+	height: 900px;
   width: 100vw;
   background-color: #262626;
 }
 
-#prototype h2, #prototype p{
+#prototype h2, #prototype #ptext{
 	color: white;
   text-align: center;
 }
@@ -235,4 +235,18 @@ iframe{
   height: 327px;
   position: absolute;
   margin: 46px 0 0 -93.5px;
+}
+.tekstpop{
+  height: 50px;
+  width: 743px;
+  margin: 1% 0 0 4%;
+  position: absolute;
+  top: 1400px;
+  padding: 7px;
+}
+#pop{
+  font-size: 1.3em;
+  text-align: center;
+  color: white;
+  font-family: sans-serif 'helvetica', 'arial';
 }

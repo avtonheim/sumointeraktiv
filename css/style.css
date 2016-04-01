@@ -150,13 +150,13 @@ header a{
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.bilde-stor img {
+.bileteprodukt {
   width: 50%;
   padding: 2px 0 2px 0;
 }
 
 /*fikser bildegalleri med piler*/
-.pilvenstre, .pilhorge {
+.pilvenstre, .pilhogre {
   margin-top: 26%;
   padding: 2%;
   height: 30px;
@@ -207,17 +207,23 @@ button:hover {
 .tabellvenstre {
   float: left;
   width: 45%;
-  padding: 10px;
-  /*margin-top: 10px;*/
+  padding: 4px;
   text-align: center;
 }
 .knapperprod1, .knapperprod2 {
   float: right;
   width: 45%;
-  padding: 1px;
+  margin-top: 5px;
+  margin-right: 4px;
 }
 .knaperprod1{
   margin-top: 30px;
+}
+.kjopknappprodukt{
+  padding: 3px;
+  margin-top: 5px;
+  padding-bottom: 2px;
+  float: left;
 }
 #bildeknapperprod1 {
   margin-top: -55%;
@@ -227,6 +233,7 @@ button:hover {
   margin-left: 10%;
 }
 #knapperprod1 h3{
+  margin-top: 4%;
   font-size: 0.8em;
 }
 
