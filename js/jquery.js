@@ -228,8 +228,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var varseltv2 = $("#vanskelig").contents().find("#varseltv2");
         var head = $("#vanskelig").contents().find("#head");
         var main = $("#vanskelig").contents().find("#produktlistemain");
-            $(varseltv2).animate({width: 'toggle'});
-            $(varseltv2).trigger( "click" );
+            $(varseltv2).trigger( "click");
             $(lastskjerm).hide();
             $(main).show();
       }
