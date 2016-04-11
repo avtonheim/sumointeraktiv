@@ -182,8 +182,7 @@ document.addEventListener("DOMContentLoaded", function() {
     start: 50,
     end: 60,
     target: "#pop",
-    text: "Prøv å legge skjorten til i huskelisten ved å klikke på stjernen!"
-
+    text: "Nå ser du at det nye albumet til Aurora er lagt til i produktlisten."
 
   });
 
@@ -191,7 +190,8 @@ document.addEventListener("DOMContentLoaded", function() {
     start: 80,
     end: 90,
     target: "#pop",
-    text: "Nå ser du at det nye albumet til Aurora er lagt til i produktlisten."
+    text: "Prøv å legge skjorten til i huskelisten ved å klikke på stjernen!"
+
 
   });
 
