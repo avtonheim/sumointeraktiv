@@ -166,7 +166,7 @@ document.addEventListener("DOMContentLoaded", function() {
     start: 15,
     end: 25,
     target: "#pop",
-    text: "Produkt blir lagt inn i din produktliste i Sumo appen mens du ser i sanntid."
+    text: "Når du ser på din favorittserie vil du få effektiv tilgang på produkter vist i serien."
 
   });
 
@@ -174,16 +174,7 @@ document.addEventListener("DOMContentLoaded", function() {
     start: 30,
     end: 40,
     target: "#pop",
-    text: "Ser du noe du liker? Hva med å sjekke ut skjorten som Harald Rønneberg bruker?"
-
-  });
-
-  popcorn.footnote({
-    start: 42,
-    end: 48,
-    target: "#pop",
-    text: "Prøv å legge skjorten til i huskelisten ved å klikke på stjernen!"
-
+    text: "Ser du noe du liker? Hva med å sjekke ut skjorten som Harald Rønneberg hadde på seg?"
 
   });
 
@@ -191,13 +182,22 @@ document.addEventListener("DOMContentLoaded", function() {
     start: 50,
     end: 60,
     target: "#pop",
-    text: "Nå ser du at det nye albumet til Aurora er lagt til i produktlisten."
+    text: "Prøv å legge skjorten til i huskelisten ved å klikke på stjernen!"
+
 
   });
 
   popcorn.footnote({
     start: 80,
     end: 90,
+    target: "#pop",
+    text: "Nå ser du at det nye albumet til Aurora er lagt til i produktlisten."
+
+  });
+
+  popcorn.footnote({
+    start: 110,
+    end: 130,
     target: "#pop",
     text: "Trenger du å gjøre noe mens du ser på kan du trykke 'pause' og produktlisten vises uten å avbryte deg når du ser på favorittprogrammet ditt. "
 
