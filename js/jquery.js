@@ -182,7 +182,7 @@ document.addEventListener("DOMContentLoaded", function() {
     start: 100,
     end: 130,
     target: "#pop",
-    text: "Ser du noe du liker? Hva med å sjekke ut skjorten som Harald Rønneberg hadde på seg?"
+    text: "Ser du noe du liker? Hva med å sjekke ut skjorten Harald Rønneberg bruker?"
 
   });
 
@@ -207,7 +207,7 @@ document.addEventListener("DOMContentLoaded", function() {
   //Fikser trigger klikk av varsel
   popcorn.code({
     start: 20, //3 sekund så kjem den fram
-    end: 263, //blir vist heile tida til videoen sluttar
+    end: 420, //blir vist heile tida til videoen sluttar
     onStart: function(options) {
       var lastskjerm = $("#vanskelig").contents().find("#lastskjerm");
       var varseltv2 = $("#vanskelig").contents().find("#varseltv2");
@@ -222,7 +222,7 @@ document.addEventListener("DOMContentLoaded", function() {
   //Fikser trigger klikk av varsel
     popcorn.code({
       start: 30, //3 sekund så kjem den fram
-      end: 263, //blir vist heile tida til videoen sluttar
+      end: 420, //blir vist heile tida til videoen sluttar
       onStart: function(options) {
         var lastskjerm = $("#vanskelig").contents().find("#lastskjerm");
         var varseltv2 = $("#vanskelig").contents().find("#varseltv2");
@@ -239,8 +239,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
   //Legger til skjorte med id 1
   popcorn.code({
-    start: 90, //90 sekund så kjem den fram
-    end: 263, //blir vis heile tida til videoen sluttar
+    start: 100, //100 sekund så kjem den fram
+    end: 420, //blir vis heile tida til videoen sluttar
     onStart: function(options) {
       var skjorte = $("#vanskelig").contents().find("#skjorte");
         $(skjorte).fadeIn(50);
@@ -254,7 +254,7 @@ document.addEventListener("DOMContentLoaded", function() {
   //Legger til Aurora med id 2
   popcorn.code({
     start: 60, //30 sekund så kjem den fram.
-    end: 263, //blir vis heile tida til videoen sluttar
+    end: 420, //blir vis heile tida til videoen sluttar
     onStart: function(options) {
       var aur = $("#vanskelig").contents().find("#aurora"); //for å finne aurora i iframe
         $(aur).fadeIn(50);
