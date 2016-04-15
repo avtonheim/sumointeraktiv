@@ -163,32 +163,32 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   popcorn.footnote({
-    start: 15,
-    end: 25,
+    start: 20,
+    end: 40,
     target: "#pop",
     text: "Når du ser på din favorittserie vil du få effektiv tilgang på produkter vist i serien."
 
   });
 
   popcorn.footnote({
-    start: 30,
-    end: 40,
-    target: "#pop",
-    text: "Ser du noe du liker? Hva med å sjekke ut skjorten som Harald Rønneberg hadde på seg?"
-
-  });
-
-  popcorn.footnote({
-    start: 50,
-    end: 60,
+    start: 60,
+    end: 85,
     target: "#pop",
     text: "Nå ser du at det nye albumet til Aurora er lagt til i produktlisten."
 
   });
 
   popcorn.footnote({
-    start: 80,
-    end: 90,
+    start: 100,
+    end: 130,
+    target: "#pop",
+    text: "Ser du noe du liker? Hva med å sjekke ut skjorten som Harald Rønneberg hadde på seg?"
+
+  });
+
+  popcorn.footnote({
+    start: 140,
+    end: 160,
     target: "#pop",
     text: "Prøv å legge skjorten til i huskelisten ved å klikke på stjernen!"
 
@@ -196,8 +196,8 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   popcorn.footnote({
-    start: 110,
-    end: 130,
+    start: 180,
+    end: 200,
     target: "#pop",
     text: "Trenger du å gjøre noe mens du ser på kan du trykke 'pause' og produktlisten vises uten å avbryte deg når du ser på favorittprogrammet ditt. "
 
@@ -206,7 +206,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   //Fikser trigger klikk av varsel
   popcorn.code({
-    start: 4, //3 sekund så kjem den fram
+    start: 20, //3 sekund så kjem den fram
     end: 263, //blir vist heile tida til videoen sluttar
     onStart: function(options) {
       var lastskjerm = $("#vanskelig").contents().find("#lastskjerm");
@@ -221,7 +221,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   //Fikser trigger klikk av varsel
     popcorn.code({
-      start: 9, //3 sekund så kjem den fram
+      start: 30, //3 sekund så kjem den fram
       end: 263, //blir vist heile tida til videoen sluttar
       onStart: function(options) {
         var lastskjerm = $("#vanskelig").contents().find("#lastskjerm");
@@ -239,7 +239,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   //Legger til skjorte med id 1
   popcorn.code({
-    start: 20, //20 sekund så kjem den fram
+    start: 90, //90 sekund så kjem den fram
     end: 263, //blir vis heile tida til videoen sluttar
     onStart: function(options) {
       var skjorte = $("#vanskelig").contents().find("#skjorte");
@@ -253,7 +253,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   //Legger til Aurora med id 2
   popcorn.code({
-    start: 50, //30 sekund så kjem den fram.
+    start: 60, //30 sekund så kjem den fram.
     end: 263, //blir vis heile tida til videoen sluttar
     onStart: function(options) {
       var aur = $("#vanskelig").contents().find("#aurora"); //for å finne aurora i iframe
