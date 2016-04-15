@@ -222,6 +222,7 @@ footer{
   width: 650px;
   height: 340px;
   position: absolute;
+  z-index: 2;
   margin: 140px 0 0 100px;
 }
 /*Biletet som kjem fram på aktiv pause*/
@@ -230,6 +231,7 @@ footer{
 }
 /*Fikser interaktiv mobil IKKJE RØYR*/
 iframe{
+  z-index: 1;
   border: none;
   width: 186px;
   height: 327px;
