@@ -115,7 +115,6 @@ video {
   margin: 7% 0 0 4%;
   float: left;
 }
-
 /*Section for video og prototype*/
 #prototype {
   text-align: center;
@@ -231,7 +230,6 @@ footer{
 }
 /*Fikser interaktiv mobil IKKJE RØYR*/
 iframe{
-  z-index: 1;
   border: none;
   width: 186px;
   height: 327px;
