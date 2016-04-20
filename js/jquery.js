@@ -234,9 +234,6 @@ document.addEventListener("DOMContentLoaded", function() {
       }
   });
 
-
-
-
   //Legger til skjorte med id 1
   popcorn.code({
     start: 100, //100 sekund så kjem den fram
