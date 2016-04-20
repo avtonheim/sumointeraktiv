@@ -121,6 +121,13 @@ Altså høgre section*/
   margin-top: -5%;
 }
 
+
+/*ingressbilde*/
+.ingressbilde {
+  width: 98%;
+}
+
+
 /*Bilde for blogg*/
 .bloggbilde {
   width: 350px;
