@@ -116,6 +116,11 @@ Altså høgre section*/
   width: 100vw;
   height: 100vh;
 }
+
+.ingress p{
+  margin-top: -5%;
+}
+
 /*Bilde for blogg*/
 .bloggbilde {
   width: 350px;
