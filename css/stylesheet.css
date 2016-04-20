@@ -70,6 +70,7 @@ nav {
   height: 1000px;
   width: 1000px;
   margin: auto;
+  text-align: justify;
 }
 #blogg h2{
   text-align: center;
@@ -77,29 +78,34 @@ nav {
 }
 
 .ingress {
-  margin-top: 4%;
+  position: left;
+  padding-top: 6.5%;
 }
 
+.ingresstext {
+  font-size: 24px;
+  line-height: 1.25;
+}
 
 /*Fikser kul style på bloggsection
 Altså høgre section*/
+
 .leftblogg{
   margin-top: 2%;
-  float: right;
-  text-align: left;
-  width: 48%;
+  float: left;
+  width: 47%;
 }
 /*Fikser kul style på bloggsection
 Altså høgre section*/
 .rightblogg{
-  text-align: left;
-  float: left;
-  width: 48%;
-  margin-right: 4%;
+  margin-top: 2%;
+  float: right;
+  width: 47%;
+  margin-right: 1%;
 }
 /*Section for tekst for å få fin padding og leseflyt*/
 .tekst {
-  padding-top: 6%;
+  padding-top: 5%;
   text-align: center;
 }
 .tekst h2 {
@@ -113,7 +119,9 @@ Altså høgre section*/
 /*Bilde for blogg*/
 .bloggbilde {
   width: 350px;
-  padding: 2% 0 2% 0;
+  padding: 3% 0 2% 0;
+  text-align: center;
+  margin-left: 10%;
 }
 
 /*Video tag for videoen i #prototype section*/
@@ -134,6 +142,7 @@ video {
 #prototype h2, #prototype #ptext{
 	color: white;
   text-align: center;
+  padding-top: -2%;
 }
 
 h1{
