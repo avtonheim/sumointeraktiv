@@ -251,3 +251,6 @@ iframe{
   color: white;
   font-family: sans-serif 'helvetica', 'arial';
 }
+video::-webkit-media-controls-fullscreen-button {
+    display: none;
+}
