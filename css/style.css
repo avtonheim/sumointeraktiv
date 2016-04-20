@@ -250,8 +250,10 @@ td {
 /*Låst skjerm første som skjer*/
 #lastskjerm{
   background-color: black;
-  height: 100vh;
-  width: 100vw;
+  height: 327px;
+  width: 186px;
+  margin: 0 auto;
+  position: absolute;
 }
 #varseltv2{
   position: absolute;

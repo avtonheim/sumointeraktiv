@@ -214,7 +214,7 @@ document.addEventListener("DOMContentLoaded", function() {
       var head = $("#vanskelig").contents().find("#head");
         $(lastskjerm).trigger( "click" );
         $(lastskjerm).css("background-image", "url(img/bakgrunniphone.png)");
-        $(lastskjerm).css("background-size", "186px", "100vh");
+        $(lastskjerm).css("background-size", "186px", "327px");
         $(varseltv2).show();
     }
   });
