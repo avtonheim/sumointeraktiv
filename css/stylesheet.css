@@ -78,6 +78,25 @@ nav {
   padding-top: 2em;
 }
 
+.innhold {
+  width: 100vw;
+  height: 100vh;
+}
+
+.innhold h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 28px;
+    margin-top: 231px;
+    text-align: justify;
+}
+
+.innholdbilde {
+    float: left;
+    margin-top: 20px;
+}
+
 .ingress {
   position: left;
   padding-top: 6.5%;
@@ -106,28 +125,26 @@ Altså høgre section*/
 }
 /*Section for tekst for å få fin padding og leseflyt*/
 .tekst {
-  padding-top: 5%;
+  padding-top: 2%;
   text-align: center;
 }
 .tekst h2 {
-	padding-bottom: 20px;
+	padding-bottom: 15px;
 }
   /*Klasse for alle sections, superklasse!*/
-.innhold {
-  width: 100vw;
-  height: 100vh;
-}
 
+
+/*p til ingressen*/
 .ingress p{
   margin-top: -5%;
+  margin-bottom: 2%;
+  margin-right: 20px;
 }
 
-
-/*ingressbilde*/
+/*Bildecollage under ingressen*/
 .ingressbilde {
   width: 98%;
 }
-
 
 /*Bilde for blogg*/
 .bloggbilde {
@@ -136,6 +153,7 @@ Altså høgre section*/
   text-align: center;
   margin-left: 10%;
 }
+
 
 /*Video tag for videoen i #prototype section*/
 video {
@@ -155,7 +173,8 @@ video {
 #prototype h2, #prototype #ptext{
 	color: white;
   text-align: center;
-  padding-top: -2%;
+  margin: 0%;
+  padding-top: 5%;
 }
 
 h1{
