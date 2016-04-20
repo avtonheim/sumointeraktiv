@@ -20,7 +20,7 @@ body {
 /*Heile header for menyen*/
 .meny {
   position: fixed;
-  width: 100vw;
+  width: 100%;
   height: 60px;
   background-color: #EDFFF5;
   z-index: 5;
@@ -114,13 +114,14 @@ Altså høgre section*/
 video {
   width: 750px;
   margin: 7% 0 0 4%;
+  padding-bottom: 10px;
   float: left;
 }
 /*Section for video og prototype*/
 #prototype {
   text-align: center;
 	height: 900px;
-  width: 100vw;
+  width: 100%;
   background-color: #262626;
 }
 
@@ -163,7 +164,7 @@ p{
 }
 
 footer{
-  width: 100vw;
+  width: 100%;
   height: 200px;
   background-color: #B4B6B9;
 }
@@ -171,7 +172,7 @@ footer{
 #footertittel{
   color: #F8BD01;
   background-color: #CDD4DA;
-  width: 100vw;
+  width: 100%;
   height: 50px;
   text-align: center;
   line-height: 3.20;
@@ -209,13 +210,11 @@ footer{
   width: 50px;
   height: 50px;
 }
-/*Target for popcorn tekst*/
+/*Target interktiv klasse*/
 #footnote{
+  position: relative;
   float: right;
-  width: 37%;
-  color: white;
-  margin: 7% 0 0 0;
-  font-size: 2em;
+  margin: 7% 7% 0 0;
 }
 /*Her er det som ligg i aktiv pause når det blir trykka på pause i videoen*/
 #aktivpause{
@@ -235,7 +234,7 @@ iframe{
   width: 186px;
   height: 327px;
   position: absolute;
-  margin: 46px 0 0 -93.5px;
+  margin: 46px 0 0 12px;
 }
 .tekstpop{
   height: 50px;
