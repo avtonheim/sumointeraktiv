@@ -144,7 +144,7 @@ h2  {
 }
 
 /*Global regel for h3, h4, og h5*/
-  h3, h4, h5, #footnote {
+  h3, h4, h5 {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-style: normal;
