@@ -75,6 +75,12 @@ nav {
   text-align: center;
   padding-top: 2em;
 }
+
+.ingress {
+  margin-top: 4%;
+}
+
+
 /*Fikser kul style på bloggsection
 Altså høgre section*/
 .leftblogg{
@@ -86,7 +92,7 @@ Altså høgre section*/
 /*Fikser kul style på bloggsection
 Altså høgre section*/
 .rightblogg{
-  text-align: right;
+  text-align: left;
   float: left;
   width: 48%;
   margin-right: 4%;
