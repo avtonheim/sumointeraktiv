@@ -298,25 +298,11 @@ iframe{
 video::-webkit-media-controls-fullscreen-button {
     display: none;
 }
-/*
+
 @media only screen and (min-width: 1000px) and (max-width: 1280px) {
     video{
-       width: 650px;
+       width: 600px;
        padding-bottom: 0px;
-    }
-    .tekstpop{
-      margin-top: -8%;
-      width: 650px;
-    }
-    #aktivpause{
-      width: 550px;
-      height: 240px;
-      margin: 100px 0 0 100px;
-    }
-
-    #footnote{
-      margin: 3% 13% 0 0;
     }
 
 }
-*/
