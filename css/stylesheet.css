@@ -303,6 +303,18 @@ video::-webkit-media-controls-fullscreen-button {
     video{
        width: 600px;
        padding-bottom: 0px;
+       margin-left: 10%;
+    }
+    #aktivpause{
+      width: 40%;
+      height: 20%;
+      position: absolute;
+      z-index: 2;
+      margin: 7% 0 0 14%;
+    }
+    .tekstpop{
+      width: 600px;
+      margin-left: 10%;
     }
 
 }
