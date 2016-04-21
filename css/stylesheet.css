@@ -132,7 +132,6 @@ Altså høgre section*/
 }
   /*Klasse for alle sections, superklasse!*/
 
-
 /*p til ingressen*/
 .ingress p{
   margin-top: -5%;
@@ -157,7 +156,7 @@ Altså høgre section*/
 /*Video tag for videoen i #prototype section*/
 video {
   width: 750px;
-  margin: 4% 0 0 4%;
+  margin: 3% 0 0 4%;
   padding-bottom: 10px;
   float: left;
 }
@@ -260,7 +259,7 @@ footer{
 #footnote{
   position: relative;
   float: right;
-  margin: 4% 7% 0 0;
+  margin: 3% 7% 0 0;
 }
 /*Her er det som ligg i aktiv pause når det blir trykka på pause i videoen*/
 #aktivpause{
@@ -285,7 +284,7 @@ iframe{
 .tekstpop{
   height: 50px;
   width: 743px;
-  margin: -2% 0 0 4%;
+  margin: -3% 0 0 4%;
   position: absolute;
   top: 1400px;
   padding: 5px;
