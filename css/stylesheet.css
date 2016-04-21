@@ -125,9 +125,10 @@ Altså høgre section*/
 }
 /*Section for tekst for å få fin padding og leseflyt*/
 .tekst {
-  padding-top: 2%;
+  padding-top: 1%;
   text-align: center;
 }
+
 .tekst h2 {
 	padding-bottom: 15px;
 }
@@ -170,11 +171,10 @@ video {
   background-color: #262626;
 }
 
-#prototype h2, #prototype #ptext{
+#prototype h2, #ptext {
 	color: white;
   text-align: center;
-  margin: 0%;
-  padding-top: 5%;
+  margin: 0 auto;
 }
 
 h1{
