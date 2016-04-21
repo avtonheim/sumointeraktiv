@@ -153,12 +153,10 @@ Altså høgre section*/
   margin-left: 10%;
 }
 
-
 /*Video tag for videoen i #prototype section*/
 video {
-  width: 750px;
+  width: 60%;
   margin: 3% 0 0 4%;
-  padding-bottom: 10px;
   float: left;
 }
 /*Section for video og prototype*/
@@ -168,8 +166,8 @@ video {
   width: 100%;
   background-color: #262626;
   padding-top: 5%;
+  position: relative;
 }
-
 
 #prototype h2, #ptext{
 	color: white;
@@ -265,11 +263,11 @@ footer{
 }
 /*Her er det som ligg i aktiv pause når det blir trykka på pause i videoen*/
 #aktivpause{
-  width: 650px;
-  height: 340px;
+  width: 50%;
+  height: 30%;
   position: absolute;
   z-index: 2;
-  margin: 120px 0 0 100px;
+  margin: 8% 0 0 9%;
 }
 /*Biletet som kjem fram på aktiv pause*/
 #innhald{
@@ -285,9 +283,8 @@ iframe{
 }
 .tekstpop{
   height: 50px;
-  width: 743px;
-  margin: -3% 0 0 4%;
-  position: absolute;
+  width: 60%;
+  margin: 4% 0 0 4%;
   top: 1400px;
   padding: 5px;
 }
@@ -301,3 +298,25 @@ iframe{
 video::-webkit-media-controls-fullscreen-button {
     display: none;
 }
+/*
+@media only screen and (min-width: 1000px) and (max-width: 1280px) {
+    video{
+       width: 650px;
+       padding-bottom: 0px;
+    }
+    .tekstpop{
+      margin-top: -8%;
+      width: 650px;
+    }
+    #aktivpause{
+      width: 550px;
+      height: 240px;
+      margin: 100px 0 0 100px;
+    }
+
+    #footnote{
+      margin: 3% 13% 0 0;
+    }
+
+}
+*/
