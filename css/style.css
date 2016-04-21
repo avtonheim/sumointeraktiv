@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   background-color: #D1D1D1;
   display: block;
@@ -256,6 +260,7 @@ td {
   width: 10px;
   height: 1px;
   background-color: none;
+  margin-top: 130px;
 }
 /*Fikser view på prototypen som visast på produksjonsrapporten*/
 @media only screen and (min-width: 186px) and (max-width: 186px) {

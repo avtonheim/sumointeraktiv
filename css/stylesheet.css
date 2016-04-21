@@ -298,7 +298,7 @@ iframe{
 video::-webkit-media-controls-fullscreen-button {
     display: none;
 }
-
+/*
 @media only screen and (min-width: 1000px) and (max-width: 1180px) {
     video{
        width: 600px;
@@ -318,3 +318,4 @@ video::-webkit-media-controls-fullscreen-button {
     }
 
 }
+*/
