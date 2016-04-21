@@ -271,7 +271,7 @@ td {
   }
   .produktliste {
     height: auto;
-    width: 99vw;
+    width: 99%;
     padding: 5% 0 0 0;
   }
   #infotekst, p {
