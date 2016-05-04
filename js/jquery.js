@@ -12,6 +12,7 @@ $(document).ready(function() {
   $("#detskjer2").hide(); //skjuler aurora fav-knapp
   $("#varseltv2").hide(); //skjuler bakgrunnsbilete frå iPhone
   $("#produktlistemain").hide(); //skjuler heile main produktliste. skal visast etter varsel simuleringa
+  $("#sophiekj").hide(); //skjuler kjolen til sophie elsie
 
 
   //funksjon for brukarprofilar ved å vise personalisert innhald for andrea
@@ -166,7 +167,8 @@ $(document).ready(function() {
 document.addEventListener("DOMContentLoaded", function() {
 
 
-  var popcorn = Popcorn("#protovideo");
+  var popcorn = Popcorn("#protovideo"); //Senkveld
+  var bloggere = Popcorn("#protovideo1"); //Bloggerene
 
   popcorn.footnote({
     start: 2,
@@ -217,9 +219,25 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
 
-  //Fikser trigger klikk av varsel
+//Fikser trigger klikk av varsel i bloggerene
+bloggere.code({
+  start: 5, //3 sekund så kjem den fram
+  end: 124, //blir vist heile tida til videoen sluttar
+  onStart: function(options) {
+    var lastskjerm = $("#vanskelig").contents().find("#lastskjerm");
+    var varseltv2 = $("#vanskelig").contents().find("#varseltv2");
+    var head = $("#vanskelig").contents().find("#head");
+      $(lastskjerm).trigger( "click" );
+      $(lastskjerm).css("background-image", "url(img/bakgrunniphone.png)");
+      $(lastskjerm).css("background-size", "186px", "327px");
+      $(varseltv2).show();
+  }
+});
+
+
+  //Fikser trigger klikk av varsel i senkveld
   popcorn.code({
-    start: 20, //3 sekund så kjem den fram
+    start: 10, //3 sekund så kjem den fram
     end: 420, //blir vist heile tida til videoen sluttar
     onStart: function(options) {
       var lastskjerm = $("#vanskelig").contents().find("#lastskjerm");
@@ -232,7 +250,23 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 
-  //Fikser trigger klikk av varsel
+  //Fikser trigger klikk av varsel i bloggerene
+    bloggere.code({
+      start: 12, //3 sekund så kjem den fram
+      end: 124, //blir vist heile tida til videoen sluttar
+      onStart: function(options) {
+        var lastskjerm = $("#vanskelig").contents().find("#lastskjerm");
+        var varseltv2 = $("#vanskelig").contents().find("#varseltv2");
+        var head = $("#vanskelig").contents().find("#head");
+        var main = $("#vanskelig").contents().find("#produktlistemain");
+            $(varseltv2).trigger( "click");
+            $(lastskjerm).hide();
+            $(main).show();
+      }
+  });
+
+
+  //Fikser trigger klikk av varsel i senkveld
     popcorn.code({
       start: 30, //3 sekund så kjem den fram
       end: 420, //blir vist heile tida til videoen sluttar
@@ -246,6 +280,22 @@ document.addEventListener("DOMContentLoaded", function() {
             $(main).show();
       }
   });
+
+
+  //Legger til skjorte med id 1
+  bloggere.code({
+    start: 17, //100 sekund så kjem den fram
+    end: 124, //blir vis heile tida til videoen sluttar
+    onStart: function(options) {
+      var kjole = $("#vanskelig").contents().find("#sophiekj");
+        $(kjole).fadeIn(50);
+    },
+    onEnd: function(options) {
+      var kjole = $("#vanskelig").contents().find("#sophiekj");
+      $(kjole).fadeOut(50);
+    }
+  });
+
 
   //Legger til skjorte med id 1
   popcorn.code({
