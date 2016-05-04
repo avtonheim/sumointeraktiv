@@ -282,13 +282,14 @@ bloggere.code({
   });
 
 
-  //Legger til skjorte med id 1
+  //Legger til kjole med id 1
   bloggere.code({
     start: 17, //100 sekund så kjem den fram
     end: 124, //blir vis heile tida til videoen sluttar
     onStart: function(options) {
       var kjole = $("#vanskelig").contents().find("#sophiekj");
         $(kjole).fadeIn(50);
+        alert("det skjer");
     },
     onEnd: function(options) {
       var kjole = $("#vanskelig").contents().find("#sophiekj");
