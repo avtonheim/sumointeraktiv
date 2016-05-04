@@ -13,6 +13,7 @@ $(document).ready(function() {
   $("#varseltv2").hide(); //skjuler bakgrunnsbilete frå iPhone
   $("#produktlistemain").hide(); //skjuler heile main produktliste. skal visast etter varsel simuleringa
   $("#sophiekj").hide(); //skjuler kjolen til sophie elsie
+  $("#extentions").hide(); //skjuler extentions til sophie elsie
 
 
   //funksjon for brukarprofilar ved å vise personalisert innhald for andrea
@@ -259,7 +260,9 @@ bloggere.code({
         var varseltv2 = $("#vanskelig").contents().find("#varseltv2");
         var head = $("#vanskelig").contents().find("#head");
         var main = $("#vanskelig").contents().find("#produktlistemain");
+        var nytekst = $("#vanskelig").contents().find("#replacethis");
             $(varseltv2).trigger( "click");
+            $(nytekst).replaceWith("Bloggerene episode bla bla bla");
             $(lastskjerm).hide();
             $(main).show();
       }
@@ -296,6 +299,19 @@ bloggere.code({
     }
   });
 
+  //Legger til extentions med id 2
+  bloggere.code({
+    start: 38, //38 sekund så kjem den fram
+    end: 124, //blir vis heile tida til videoen sluttar
+    onStart: function(options) {
+      var ext = $("#vanskelig").contents().find("#extentions");
+        $(ext).fadeIn(50);
+    },
+    onEnd: function(options) {
+      var ext = $("#vanskelig").contents().find("#extentions");
+      $(ext).fadeOut(50);
+    }
+  });
 
   //Legger til skjorte med id 1
   popcorn.code({
