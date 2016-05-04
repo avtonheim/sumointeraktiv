@@ -14,6 +14,19 @@ $(document).ready(function() {
   $("#produktlistemain").hide(); //skjuler heile main produktliste. skal visast etter varsel simuleringa
 
 
+  //funksjon for brukarprofilar ved å vise personalisert innhald for andrea
+  $("#andrea").click(function() {
+    $("#profilar").hide();
+    $("#protovideo").hide();
+    $("#protovideo1").show();
+  });
+
+  //funksjon for brukarprofilar ved å vise personalisert innhald for birger
+  $("#birger").click(function() {
+    $("#profilar").hide();
+    $("#protovideo1").hide();
+    $("#protovideo").show();
+  });
 
   //funksjon for å vise at ting blir lagt til i produktlista
   $("#før1").click(function() {

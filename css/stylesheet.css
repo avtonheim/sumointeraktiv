@@ -159,6 +159,32 @@ video {
   margin: 3% 0 0 4%;
   float: left;
 }
+#profilar h3{
+  color: white;
+  margin-top: 15%;
+  margin-bottom: 2%;
+}
+#profilar h5{
+  color: white;
+}
+/*Laget over brukarprofilane i prototype.*/
+#profilar{
+  height: 900px;
+  position: absolute;
+  z-index: 200;
+  width: 100%;
+  background-color: black;
+  text-align: center;
+}
+/*style for brukarprofilane*/
+.brukarprofil{
+  width: 200px;
+  height: 200px;
+  color: white;
+  display: inline-block;
+  margin: 1em;
+}
+
 /*Section for video og prototype*/
 #prototype {
   text-align: center;
@@ -298,24 +324,3 @@ iframe{
 video::-webkit-media-controls-fullscreen-button {
     display: none;
 }
-/*
-@media only screen and (min-width: 1000px) and (max-width: 1180px) {
-    video{
-       width: 600px;
-       padding-bottom: 0px;
-       margin-left: 10%;
-    }
-    #aktivpause{
-      width: 40%;
-      height: 20%;
-      position: absolute;
-      z-index: 2;
-      margin: 7% 0 0 14%;
-    }
-    .tekstpop{
-      width: 600px;
-      margin-left: 10%;
-    }
-
-}
-*/
