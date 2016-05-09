@@ -305,7 +305,9 @@ bloggere.code({
     end: 124, //blir vis heile tida til videoen sluttar
     onStart: function(options) {
       var ext = $("#vanskelig").contents().find("#extentions");
+      var kjole = $("#vanskelig").contents().find("#sophiekj");
         $(ext).fadeIn(50);
+        $(kjole).fadeIn(50);
     },
     onEnd: function(options) {
       var ext = $("#vanskelig").contents().find("#extentions");
@@ -319,7 +321,9 @@ bloggere.code({
     end: 420, //blir vis heile tida til videoen sluttar
     onStart: function(options) {
       var skjorte = $("#vanskelig").contents().find("#skjorte");
+      var aurora = $("#vanskelig").contents().find("#aurora");
         $(skjorte).fadeIn(50);
+        $(aurora).fadeIn(50);
     },
     onEnd: function(options) {
       var skjorte = $("#vanskelig").contents().find("#skjorte");
