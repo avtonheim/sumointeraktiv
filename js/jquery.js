@@ -11,6 +11,8 @@ $(document).ready(function() {
   $("#detskjer21").hide(); //skjuler aurora fav-knapp i produktsida
   $("#detskjer2").hide(); //skjuler aurora fav-knapp
   $("#varseltv2").hide(); //skjuler bakgrunnsbilete frå iPhone
+  $("#detskjer3").hide(); //skjuler kjole sophie fav-knapp
+  $("#detskjer4").hide(); //skjuler ext sophie fav-ext.
   $("#produktlistemain").hide(); //skjuler heile main produktliste. skal visast etter varsel simuleringa
   $("#sophiekj").hide(); //skjuler kjolen til sophie elsie
   $("#extentions").hide(); //skjuler extentions til sophie elsie
@@ -77,6 +79,30 @@ $(document).ready(function() {
   $("#detskjer21").click(function() {
     $("#før21").show();
     $("#detskjer21").hide();
+  });
+
+  //funksjon for å vise at ting blir lagt til i produktlista for Bloggerene
+  $("#før3").click(function() {
+    $("#før3").hide();
+    $("#detskjer3").show();
+  });
+
+  //funksjon for å vise at ting blir lagt til i produktlista
+  $("#detskjer3").click(function() {
+    $("#før3").show();
+    $("#detskjer3").hide();
+  });
+
+  //funksjon for å vise at ting blir lagt til i produktlista for Bloggerene
+  $("#før4").click(function() {
+    $("#før4").hide();
+    $("#detskjer4").show();
+  });
+
+  //funksjon for å vise at ting blir lagt til i produktlista
+  $("#detskjer4").click(function() {
+    $("#før4").show();
+    $("#detskjer4").hide();
   });
 
   //fikser kjøp nå i skjorte med hide/show av innhald
@@ -262,7 +288,8 @@ bloggere.code({
         var main = $("#vanskelig").contents().find("#produktlistemain");
         var nytekst = $("#vanskelig").contents().find("#replacethis");
             $(varseltv2).trigger( "click");
-            $(nytekst).replaceWith("Bloggerene episode bla bla bla");
+            $(nytekst).replaceWith("Bloggerene Sesong 6, episode 2.");
+            $(nytekst).css("font-size", "0.5em");
             $(lastskjerm).hide();
             $(main).show();
       }
