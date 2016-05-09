@@ -23,6 +23,7 @@ $(document).ready(function() {
     $("#profilar").hide();
     $("#protovideo").hide();
     $("#protovideo1").show();
+    $("#pop").hide();
   });
 
   //funksjon for brukarprofilar ved å vise personalisert innhald for birger
@@ -30,6 +31,7 @@ $(document).ready(function() {
     $("#profilar").hide();
     $("#protovideo1").hide();
     $("#protovideo").show();
+    $("#pop1").hide();
   });
 
   //funksjon for å vise at ting blir lagt til i produktlista
@@ -207,27 +209,40 @@ document.addEventListener("DOMContentLoaded", function() {
   var popcorn = Popcorn("#protovideo"); //Senkveld
   var bloggere = Popcorn("#protovideo1"); //Bloggerene
 
+//Tekst for Senkveld
   popcorn.footnote({
-    start: 2,
-    end: 10,
+    start: 0,
+    end: 7,
     target: "#pop",
-    text: "Gjennom denne simuleringen vil du se et klipp som illustrerer vår nye løsning med second screen"
+    text: "Med denne simuleringen vil du få innblikk i vår løsning på hvordan reklame kan integreres i ulike strømmetjenester ved bruk av second screen."
   });
 
   popcorn.footnote({
-    start: 20,
-    end: 40,
+    start: 10,
+    end: 29,
     target: "#pop",
-    text: "Når du ser på din favorittserie vil du få effektiv tilgang på produkter vist i serien."
+    text: "Når du ser på din favorittserie vil du enkelt få tilgang på relaterte produkter ved at strømmetjenestens respektive applikasjon sender deg en varsel."
+  });
 
+  popcorn.footnote({
+    start: 30,
+    end: 50,
+    target: "#pop",
+    text: "Utvalgte produkter som vises i programmet vil etterhvert listes opp i seriens produktliste."
   });
 
   popcorn.footnote({
     start: 60,
-    end: 85,
+    end: 75,
     target: "#pop",
     text: "Nå ser du at det nye albumet til Aurora er lagt til i produktlisten."
+  });
 
+  popcorn.footnote({
+    start: 85,
+    end: 95,
+    target: "#pop",
+    text: "Ved å tilby produktannonseringen på en sekundær skjerm kan du enkelt utforske produktene med en gang."
   });
 
   popcorn.footnote({
@@ -235,30 +250,113 @@ document.addEventListener("DOMContentLoaded", function() {
     end: 130,
     target: "#pop",
     text: "Ser du noe du liker? Hva med å sjekke ut skjorten Harald Rønneberg bruker?"
-
   });
 
   popcorn.footnote({
-    start: 140,
+    start: 135,
     end: 160,
     target: "#pop",
-    text: "Prøv å legge skjorten til i huskelisten ved å klikke på stjernen!"
-
-
+    text: "Dersom du ønsker å sjekke ut produktet senere kan du legge dette til i huskelisten."
   });
 
   popcorn.footnote({
     start: 180,
     end: 200,
     target: "#pop",
-    text: "Trenger du å gjøre noe mens du ser på kan du trykke 'pause' og produktlisten vises uten å avbryte deg når du ser på favorittprogrammet ditt. "
-
+    text: "Tar du en pause fra programmet vil produktlisten med tilhørende produkter vises som en liten påminnelse."
   });
+
+  popcorn.footnote({
+    start: 210,
+    end: 220,
+    target: "#pop",
+    text: "Om du vil klikke hjem et produkt kan gå inn på produktet og trykke på 'kjøp nå'."
+  });
+
+  popcorn.footnote({
+    start: 220,
+    end: 240,
+    target: "#pop",
+    text: "Betaling og kontaktinformasjon vil være knyttet opp mot din konto hos strømmetjenesten for å gjøre det så enkelt som mulig for deg som bruker!"
+  });
+
+
+//Tekst for Bloggerne
+
+bloggere.footnote({
+  start: 0,
+  end: 9,
+  target: "#pop1",
+  text: "Med denne simuleringen vil du få innblikk i vår løsning på hvordan reklame kan integreres i ulike strømmetjenester ved bruk av second screen."
+});
+
+bloggere.footnote({
+  start: 12,
+  end: 20,
+  target: "#pop1",
+  text: "Når du ser på din favorittserie vil du enkelt få tilgang på relaterte produkter ved at strømmetjenestens respektive applikasjon sender deg en varsel."
+});
+
+bloggere.footnote({
+  start: 20,
+  end: 30,
+  target: "#pop1",
+  text: "Utvalgte produkter som vises i programmet vil etterhvert listes opp i seriens produktliste."
+});
+
+bloggere.footnote({
+  start: 35,
+  end: 40,
+  target: "#pop1",
+  text: "Nå ser du at kjolen til Sophie Elise er lagt til i produktlisten."
+});
+
+bloggere.footnote({
+  start: 50,
+  end: 55,
+  target: "#pop1",
+  text: "Ved å tilby produktannonseringen på en sekundær skjerm kan du enkelt utforske produktene med en gang."
+});
+
+bloggere.footnote({
+  start: 110,
+  end: 120,
+  target: "#pop1",
+  text: "Ser du noe du liker? Hva med å sjekke ut kjolen Sophie Elise har på?"
+});
+
+bloggere.footnote({
+  start: 130,
+  end: 140,
+  target: "#pop1",
+  text: "Dersom du ønsker å sjekke ut produktet senere kan du legge dette til i huskelisten."
+});
+
+bloggere.footnote({
+  start: 150,
+  end: 160,
+  target: "#pop1",
+  text: "Tar du en pause fra programmet vil produktlisten med tilhørende produkter vises som en liten påminnelse."
+});
+
+bloggere.footnote({
+  start: 170,
+  end: 180,
+  target: "#pop1",
+  text: "Om du vil klikke hjem et produkt kan gå inn på produktet og trykke på 'kjøp nå'."
+});
+
+bloggere.footnote({
+  start: 183,
+  end: 240,
+  target: "#pop1",
+  text: "Betaling og kontaktinformasjon vil være knyttet opp mot din konto hos strømmetjenesten for å gjøre det så enkelt som mulig for deg som bruker!"
+});
 
 
 //Fikser trigger klikk av varsel i bloggerene
 bloggere.code({
-  start: 5, //3 sekund så kjem den fram
+  start: 12, //3 sekund så kjem den fram
   end: 124, //blir vist heile tida til videoen sluttar
   onStart: function(options) {
     var lastskjerm = $("#vanskelig").contents().find("#lastskjerm");
@@ -293,7 +391,7 @@ bloggere.code({
 
   //Fikser trigger klikk av varsel i bloggerene
     bloggere.code({
-      start: 12, //3 sekund så kjem den fram
+      start: 20, //3 sekund så kjem den fram
       end: 124, //blir vist heile tida til videoen sluttar
       onStart: function(options) {
         var lastskjerm = $("#vanskelig").contents().find("#lastskjerm");
@@ -325,7 +423,7 @@ bloggere.code({
 
   //Legger til kjole med id 1
   bloggere.code({
-    start: 17, //17 sekund så kjem den fram
+    start: 35, //17 sekund så kjem den fram
     end: 124, //blir vis heile tida til videoen sluttar
     onStart: function(options) {
       var kjole = $("#vanskelig").contents().find("#sophiekj");
@@ -339,7 +437,7 @@ bloggere.code({
 
   //Legger til extentions med id 2
   bloggere.code({
-    start: 38, //38 sekund så kjem den fram
+    start: 50, //38 sekund så kjem den fram
     end: 124, //blir vis heile tida til videoen sluttar
     onStart: function(options) {
       var ext = $("#vanskelig").contents().find("#extentions");

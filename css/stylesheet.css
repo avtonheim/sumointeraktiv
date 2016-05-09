@@ -314,7 +314,7 @@ iframe{
   top: 1400px;
   padding: 5px;
 }
-#pop{
+#pop, #pop1{
   font-size: 1.3em;
   line-height: 160%;
   text-align: left;
