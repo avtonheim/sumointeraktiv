@@ -254,10 +254,12 @@ bloggere.code({
     var lastskjerm = $("#vanskelig").contents().find("#lastskjerm");
     var varseltv2 = $("#vanskelig").contents().find("#varseltv2");
     var head = $("#vanskelig").contents().find("#head");
+    var senkveld = $("#vanskelig").contents().find("#senkveld");
       $(lastskjerm).trigger( "click" );
       $(lastskjerm).css("background-image", "url(img/bakgrunniphone.png)");
       $(lastskjerm).css("background-size", "186px", "327px");
       $(varseltv2).show();
+      $(senkveld).hide();
   }
 });
 
@@ -270,10 +272,12 @@ bloggere.code({
       var lastskjerm = $("#vanskelig").contents().find("#lastskjerm");
       var varseltv2 = $("#vanskelig").contents().find("#varseltv2");
       var head = $("#vanskelig").contents().find("#head");
+      var blogg = $("#vanskelig").contents().find("#bloggerne");
         $(lastskjerm).trigger( "click" );
         $(lastskjerm).css("background-image", "url(img/bakgrunniphone.png)");
         $(lastskjerm).css("background-size", "186px", "327px");
         $(varseltv2).show();
+        $(blogg).hide();
     }
   });
 
@@ -286,10 +290,7 @@ bloggere.code({
         var varseltv2 = $("#vanskelig").contents().find("#varseltv2");
         var head = $("#vanskelig").contents().find("#head");
         var main = $("#vanskelig").contents().find("#produktlistemain");
-        var nytekst = $("#vanskelig").contents().find("#replacethis");
             $(varseltv2).trigger( "click");
-            $(nytekst).replaceWith("Bloggerene Sesong 6, episode 2.");
-            $(nytekst).css("font-size", "0.5em");
             $(lastskjerm).hide();
             $(main).show();
       }
