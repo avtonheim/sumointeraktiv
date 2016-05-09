@@ -296,7 +296,7 @@ footer{
   margin: 8% 0 0 9%;
 }
 /*Biletet som kjem fram på aktiv pause*/
-#innhald{
+#innhald, #innhaldblogg{
   width: 100%;
 }
 /*Fikser interaktiv mobil IKKJE RØYR*/

@@ -142,13 +142,23 @@ $(document).ready(function() {
   });
 
 
-  //Fikser aktiv pause
+  //Fikser aktiv pause i senkveld
   $("#innhald").hide();
   $("#protovideo").on('pause', function() {
     $("#innhald").fadeIn(100);
   });
   $("#protovideo").on('play', function() {
     $("#innhald").fadeOut(100);
+
+  });
+
+//Fikser aktiv pause for bloggerene
+  $("#innhaldblogg").hide();
+  $("#protovideo1").on('pause', function() {
+    $("#innhaldblogg").fadeIn(100);
+  });
+  $("#protovideo1").on('play', function() {
+    $("#innhaldblogg").fadeOut(100);
 
   });
 
