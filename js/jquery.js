@@ -442,7 +442,7 @@ bloggere.code({
     onStart: function(options) {
       var ext = $("#vanskelig").contents().find("#extentions");
       var kjole = $("#vanskelig").contents().find("#sophiekj");
-        $(ext).fadeIn(50);
+        $(ext).fadeIn(40);
         $(kjole).fadeIn(50);
     },
     onEnd: function(options) {
@@ -458,7 +458,7 @@ bloggere.code({
     onStart: function(options) {
       var skjorte = $("#vanskelig").contents().find("#skjorte");
       var aurora = $("#vanskelig").contents().find("#aurora");
-        $(skjorte).fadeIn(50);
+        $(skjorte).fadeIn(40);
         $(aurora).fadeIn(50);
     },
     onEnd: function(options) {
