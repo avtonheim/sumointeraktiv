@@ -172,7 +172,7 @@ video {
 #profilar{
   height: 900px;
   position: absolute;
-  z-index: 800;
+  z-index: 200;
   width: 100%;
   background-color: black;
   text-align: center;
@@ -183,7 +183,6 @@ video {
   height: 200px;
   color: white;
   display: inline-block;
-  z-index: 900;
   margin: 1em;
 }
 
