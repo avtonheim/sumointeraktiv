@@ -97,7 +97,7 @@ header a{
   border-width: medium;
   border-color: #B5B0B0;
 }
-#skjorteprodukt, #auroraprodukt {
+#skjorteprodukt, #auroraprodukt, #sommerprodukt, #extprodukt {
   position: absolute;
   background-color: #D1D1D1;
 }
