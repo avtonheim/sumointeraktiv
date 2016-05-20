@@ -152,6 +152,7 @@ $(document).ready(function() {
   //fikser kjøp nå i Aurora med hide/show av innhald
   $("#aurorakjop").click(function() {
     $("#tittelfront").hide();
+     $("#bloggerene").hide();
     $("#auroraprodukt").show();
   });
 
@@ -177,7 +178,7 @@ $(document).ready(function() {
  $("#tilbakeknapp3").click(function() {
    $("#tittelfront").show();
    $("#sommerprodukt").hide();
-   $("senkveld").hide();
+   $("#senkveld").hide();
  });
 
  //fikser å vise produktlista fra extentions

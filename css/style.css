@@ -197,8 +197,11 @@ button:hover {
   margin: auto;
   text-align: center;
 }
+.sporje{
+  float: right;
+}
 
-#tilbakeknapp1, #tilbakekapp2, #tilbakeknapp3, #tilbakeknapp4 {
+#tilbakeknapp1, #tilbakeknapp2, #tilbakeknapp3, #tilbakeknapp4 {
   margin-top: -20px;
 }
 .tabellvenstre {
