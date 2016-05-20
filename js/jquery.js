@@ -270,7 +270,7 @@ document.addEventListener("DOMContentLoaded", function() {
     start: 210,
     end: 220,
     target: "#pop",
-    text: "Om du vil klikke hjem et produkt kan gå inn på produktet og trykke på 'kjøp nå'."
+    text: "Om du vil klikke hjem et produkt kan gå inn på produktet og trykke 'kjøp nå'."
   });
 
   popcorn.footnote({
@@ -319,36 +319,36 @@ bloggere.footnote({
 });
 
 bloggere.footnote({
-  start: 110,
-  end: 120,
+  start: 60,
+  end: 65,
   target: "#pop1",
   text: "Ser du noe du liker? Hva med å sjekke ut kjolen Sophie Elise har på?"
 });
 
 bloggere.footnote({
-  start: 130,
-  end: 140,
+  start: 70,
+  end: 75,
   target: "#pop1",
   text: "Dersom du ønsker å sjekke ut produktet senere kan du legge dette til i huskelisten."
 });
 
 bloggere.footnote({
-  start: 150,
-  end: 160,
+  start: 78,
+  end: 81
   target: "#pop1",
   text: "Tar du en pause fra programmet vil produktlisten med tilhørende produkter vises som en liten påminnelse."
 });
 
 bloggere.footnote({
-  start: 170,
-  end: 180,
+  start: 85,
+  end: 90,
   target: "#pop1",
-  text: "Om du vil klikke hjem et produkt kan gå inn på produktet og trykke på 'kjøp nå'."
+  text: "Om du vil klikke hjem et produkt kan gå inn på produktet og trykke 'kjøp nå'."
 });
 
 bloggere.footnote({
-  start: 183,
-  end: 240,
+  start: 92,
+  end: 100,
   target: "#pop1",
   text: "Betaling og kontaktinformasjon vil være knyttet opp mot din konto hos strømmetjenesten for å gjøre det så enkelt som mulig for deg som bruker!"
 });
