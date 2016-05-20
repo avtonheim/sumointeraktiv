@@ -96,6 +96,11 @@ nav {
     margin-top: 20px;
 }
 
+.innholdtekst {
+  font-size: 20px;
+  line-height: 1.25;
+}
+
 .ingress {
   position: left;
   padding-top: 6.5%;
@@ -110,7 +115,7 @@ nav {
 Altså høgre section*/
 
 .leftblogg{
-  margin-top: 2%;
+  margin-top: 8%;
   float: left;
   width: 47%;
 }
