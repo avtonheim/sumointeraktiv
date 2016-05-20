@@ -299,56 +299,56 @@ bloggere.footnote({
 
 bloggere.footnote({
   start: 20,
-  end: 30,
+  end: 25,
   target: "#pop1",
   text: "Utvalgte produkter som vises i programmet vil etterhvert listes opp under 'Dine produkter'."
 });
 
 bloggere.footnote({
-  start: 35,
-  end: 40,
+  start: 30,
+  end: 35,
   target: "#pop1",
   text: "Nå ser du at kjolen til Sophie Elise er lagt til."
+});
+
+bloggere.footnote({
+  start: 40,
+  end: 45,
+  target: "#pop1",
+  text: "Ved å tilby produktannonseringen på en sekundær skjerm kan du enkelt utforske produktene med en gang."
 });
 
 bloggere.footnote({
   start: 50,
   end: 55,
   target: "#pop1",
-  text: "Ved å tilby produktannonseringen på en sekundær skjerm kan du enkelt utforske produktene med en gang."
-});
-
-bloggere.footnote({
-  start: 60,
-  end: 65,
-  target: "#pop1",
   text: "Ser du noe du liker? Hva med å sjekke ut kjolen Sophie Elise har på?"
 });
 
 bloggere.footnote({
-  start: 70,
-  end: 75,
+  start: 60,
+  end: 63,
   target: "#pop1",
   text: "Dersom du ønsker å sjekke ut produktet senere kan du legge dette til i huskelisten."
 });
 
 bloggere.footnote({
-  start: 78,
-  end: 81,
+  start: 65,
+  end: 70,
   target: "#pop1",
   text: "Tar du en pause fra programmet vil produktlisten med tilhørende produkter vises som en liten påminnelse."
 });
 
 bloggere.footnote({
-  start: 85,
-  end: 90,
+  start: 75,
+  end: 80,
   target: "#pop1",
   text: "Om du vil klikke hjem et produkt kan gå inn på produktet og trykke 'kjøp nå'."
 });
 
 bloggere.footnote({
-  start: 92,
-  end: 100,
+  start: 83,
+  end: 88,
   target: "#pop1",
   text: "Betaling og kontaktinformasjon vil være knyttet opp mot din konto hos strømmetjenesten for å gjøre det så enkelt som mulig for deg som bruker!"
 });
@@ -423,7 +423,7 @@ bloggere.code({
 
   //Legger til kjole med id 1
   bloggere.code({
-    start: 35, //17 sekund så kjem den fram
+    start: 30, //17 sekund så kjem den fram
     end: 124, //blir vis heile tida til videoen sluttar
     onStart: function(options) {
       var kjole = $("#vanskelig").contents().find("#sophiekj");
