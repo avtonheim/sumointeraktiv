@@ -3,10 +3,16 @@ $(document).ready(function() {
   $("#skjorte").hide(); //skjorte i huskelista
   $("#skjorteprodukt").hide(); //sjølve produktsida for skjorta
   $("#auroraprodukt").hide(); //sjølve produktsida for aurora
+  $("#sommerprodukt").hide(); //sjølve produktsida for sommerkjolen
+  $("#extprodukt").hide(); //sjølve produktsida for extentions
   $(".container").hide();
   $("#2").hide(); //skjortebilde i produktsida
   $("#4").hide(); //albumbilete i produktsida
+  $("#6").hide(); //skjuler sommerkjole siste bilete
+  $("#8").hide(); //skjuler ext
   $("#detskjer1").hide(); //skjuler skjorte fav-knapp
+  $("#detskjer25").hide();
+  $("#detskjer23").hide();
   $("#detskjer12").hide(); //skjuler skjorte fav-knapp i produktsida
   $("#detskjer21").hide(); //skjuler aurora fav-knapp i produktsida
   $("#detskjer2").hide(); //skjuler aurora fav-knapp
@@ -82,6 +88,30 @@ $(document).ready(function() {
     $("#detskjer21").hide();
   });
 
+  //funksjon for å vise at ting blir lagt til i produktlista
+  $("#før22").click(function() {
+    $("#før22").hide();
+    $("#detskjer23").show();
+  });
+
+  //funksjon for å vise at ting blir lagt til i produktlista
+  $("#detskjer23").click(function() {
+    $("#før22").show();
+    $("#detskjer23").hide();
+  });
+
+  //funksjon for å vise at ting blir lagt til i produktlista
+  $("#før24").click(function() {
+    $("#før24").hide();
+    $("#detskjer25").show();
+  });
+
+  //funksjon for å vise at ting blir lagt til i produktlista
+  $("#detskjer25").click(function() {
+    $("#før24").show();
+    $("#detskjer25").hide();
+  });
+
   //funksjon for å vise at ting blir lagt til i produktlista for Bloggerene
   $("#før3").click(function() {
     $("#før3").hide();
@@ -130,6 +160,31 @@ $(document).ready(function() {
     $("#auroraprodukt").hide();
   });
 
+  //fikser kjøp nå i zalandokjop med hide/show av innhald
+  $("#zalandokjop").click(function() {
+    $("#tittelfront").hide();
+    $("#sommerprodukt").show();
+  });
+
+  //fikser kjøp nå i zalandokjop med hide/show av innhald
+  $("#extentions").click(function() {
+    $("#tittelfront").hide();
+    $("#extprodukt").show();
+  });
+
+//fikser å vise produktlista fra sommerkjolen
+$("#tilbakeknapp3").click(function() {
+  $("#tittelfront").show();
+  $("#sommerprodukt").hide();
+  $("senkveld").hide();
+});
+
+//fikser å vise produktlista fra extentions
+$("#tilbakeknapp4").click(function() {
+  $("#tittelfront").show();
+  $("#extprodukt").hide();
+  $("senkveld").hide();
+});
 
 
   //funksjon for å vise at ting blir lagt til i produktlista
@@ -194,6 +249,29 @@ $(document).ready(function() {
     $("#4").toggle();
   });
 
+  //pil til venstre i sommerkjole
+  $("#pil-left3").click(function() {
+    $("#5").toggle();
+    $("#6").toggle();
+  });
+
+  //pil til høgre i sommerkjole
+  $("#pil-right4").click(function() {
+    $("#5").toggle();
+    $("#6").toggle();
+  });
+
+  //pil til venstre i ext prod
+  $("#pil-left5").click(function() {
+    $("#7").toggle();
+    $("#8").toggle();
+  });
+
+  //pil til høgre i ext prod
+  $("#pil-right6").click(function() {
+    $("#7").toggle();
+    $("#8").toggle();
+  });
   //meny fiksing
 
   $("#hamburger-nav").click(function() {
