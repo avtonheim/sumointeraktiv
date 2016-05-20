@@ -171,7 +171,7 @@ video {
 #profilar{
   height: 900px;
   position: absolute;
-  z-index: 200;
+  z-index: 800;
   width: 100%;
   background-color: black;
   text-align: center;
