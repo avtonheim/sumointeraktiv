@@ -20,7 +20,7 @@ a {
 }
 
 #head {
-  /*width: 100vw;*/
+  z-index: 900;
   background-color: white;
 }
 #logo {
@@ -199,10 +199,28 @@ button:hover {
 }
 .sporje{
   float: right;
+  width: 40px;
+  margin-top: -20px;
+}
+.hjelp{
+  margin: 0 auto;
+  z-index: 800;
+  position: absolute;
+  background-color: #D1D1D1;
+  width: 100%;
+  height: auto;
+}
+#hjelptekst{
+  margin: auto;
+  width: 90%;
+  margin-bottom: 10px;
+  text-align: left;
+  font-size: 0.8em;
 }
 
-#tilbakeknapp1, #tilbakeknapp2, #tilbakeknapp3, #tilbakeknapp4 {
+#tilbakeknapp1, #tilbakeknapp2, #tilbakeknapp3, #tilbakeknapp4{
   margin-top: -20px;
+  width: 40px;
 }
 .tabellvenstre {
   float: left;

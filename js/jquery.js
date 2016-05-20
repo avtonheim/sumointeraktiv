@@ -24,6 +24,7 @@ $(document).ready(function() {
   $("#8").hide(); //skjuler ext
   $("#detskjer25").hide();
   $("#detskjer23").hide();
+  $(".hjelp").hide();
 
 
   //funksjon for brukarprofilar ved å vise personalisert innhald for andrea
@@ -39,6 +40,18 @@ $(document).ready(function() {
     $("#protovideo").show();
     $("#pop1").hide();
   });
+
+
+//hjelpside
+ $(".sporje").click(function() {
+   $(".hjelp").show();
+ });
+
+ //hjelpside tilbake
+  $("#tb").click(function() {
+    $(".hjelp").hide();
+  });
+
 
   //funksjon for å vise at ting blir lagt til i produktlista
   $("#før1").click(function() {
