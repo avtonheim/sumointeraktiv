@@ -18,6 +18,13 @@ $(document).ready(function() {
   $("#extentions").hide(); //skjuler extentions til sophie elsie
   $("#protovideo").hide(); //skjuler senkveld videoar ;)
   $("#protovideo1").hide();//skjuler bloggerene
+  $("#sommerprodukt").hide(); //sjølve produktsida for sommerkjolen
+  $("#extprodukt").hide(); //sjølve produktsida for extentions
+  $("#6").hide(); //skjuler sommerkjole siste bilete
+  $("#8").hide(); //skjuler ext
+  $("#detskjer25").hide();
+  $("#detskjer23").hide();
+
 
   //funksjon for brukarprofilar ved å vise personalisert innhald for andrea
   $("#andrea").click(function() {
@@ -82,6 +89,30 @@ $(document).ready(function() {
     $("#detskjer21").hide();
   });
 
+  //funksjon for å vise at ting blir lagt til i produktlista
+    $("#før22").click(function() {
+      $("#før22").hide();
+      $("#detskjer23").show();
+    });
+
+    //funksjon for å vise at ting blir lagt til i produktlista
+    $("#detskjer23").click(function() {
+      $("#før22").show();
+      $("#detskjer23").hide();
+    });
+
+    //funksjon for å vise at ting blir lagt til i produktlista
+    $("#før24").click(function() {
+      $("#før24").hide();
+      $("#detskjer25").show();
+    });
+
+    //funksjon for å vise at ting blir lagt til i produktlista
+    $("#detskjer25").click(function() {
+      $("#før24").show();
+      $("#detskjer25").hide();
+    });
+
   //funksjon for å vise at ting blir lagt til i produktlista for Bloggerene
   $("#før3").click(function() {
     $("#før3").hide();
@@ -129,6 +160,32 @@ $(document).ready(function() {
     $("#tittelfront").show();
     $("#auroraprodukt").hide();
   });
+
+  //fikser kjøp nå i zalandokjop med hide/show av innhald
+   $("#zalandokjop").click(function() {
+     $("#tittelfront").hide();
+     $("#sommerprodukt").show();
+   });
+
+   //fikser kjøp nå i zalandokjop med hide/show av innhald
+   $("#extentions").click(function() {
+     $("#tittelfront").hide();
+     $("#extprodukt").show();
+   });
+
+ //fikser å vise produktlista fra sommerkjolen
+ $("#tilbakeknapp3").click(function() {
+   $("#tittelfront").show();
+   $("#sommerprodukt").hide();
+   $("senkveld").hide();
+ });
+
+ //fikser å vise produktlista fra extentions
+ $("#tilbakeknapp4").click(function() {
+   $("#tittelfront").show();
+   $("#extprodukt").hide();
+   $("senkveld").hide();
+ });
 
 
 
@@ -193,6 +250,31 @@ $(document).ready(function() {
     $("#3").toggle();
     $("#4").toggle();
   });
+
+  //pil til venstre i sommerkjole
+ $("#pil-left3").click(function() {
+   $("#5").toggle();
+   $("#6").toggle();
+ });
+
+ //pil til høgre i sommerkjole
+ $("#pil-right4").click(function() {
+   $("#5").toggle();
+   $("#6").toggle();
+ });
+
+ //pil til venstre i ext prod
+ $("#pil-left5").click(function() {
+   $("#7").toggle();
+   $("#8").toggle();
+ });
+
+ //pil til høgre i ext prod
+ $("#pil-right6").click(function() {
+   $("#7").toggle();
+   $("#8").toggle();
+ });
+
 
   //meny fiksing
 
