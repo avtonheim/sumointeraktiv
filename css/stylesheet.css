@@ -96,15 +96,15 @@ nav {
     margin-top: 20px;
 }
 
-.ingress {
+/*.ingress {
   position: left;
   padding-top: 6.5%;
-}
+}*/
 
-.ingresstext {
+/*.ingresstext {
   font-size: 24px;
   line-height: 1.25;
-}
+}*/
 
 /*Fikser kul style på bloggsection
 Altså høgre section*/
@@ -143,6 +143,7 @@ Altså høgre section*/
 /*Bildecollage under ingressen*/
 .ingressbilde {
   width: 98%;
+  margin-top: 5%;
 }
 
 /*Bilde for blogg*/
