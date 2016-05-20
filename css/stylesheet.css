@@ -5,7 +5,7 @@
   padding: 0;
 }
 body {
-  display: block;
+  display: blck;
   margin: 0 auto;
   background-color: #EDFFF5;
 }
@@ -47,6 +47,11 @@ nav {
   line-height: 3;
   color: #F8BD01;
 }
+
+.leftblogg .bakgrunnlogo {
+margin-top: 8%;
+  }
+
 /*Laga ein visuell effekt med namnet SRM*/
 .bakgrunnlogo{
   font-family: 'Roboto', sans-serif;
@@ -96,20 +101,21 @@ nav {
     margin-top: 20px;
 }
 
+.innholdtekst {
+  font-size: 20px;
+  line-height: 1.25;
+}
+
 /*.ingress {
   position: left;
   padding-top: 6.5%;
 }*/
 
-/*.ingresstext {
-  font-size: 24px;
-  line-height: 1.25;
-}*/
 
 /*Fikser kul style på bloggsection
 Altså høgre section*/
 
-.leftblogg{
+.leftblogg {
   margin-top: 2%;
   float: left;
   width: 47%;
@@ -144,6 +150,14 @@ Altså høgre section*/
 .ingressbilde {
   width: 98%;
   margin-top: 5%;
+}
+
+.ingresstext {
+  font-size: 20px;
+  font-family: 'Crimson Text', serif;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 1.25;
 }
 
 /*Bilde for blogg*/
