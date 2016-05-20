@@ -202,6 +202,9 @@ button:hover {
   padding-left: 3%;
   padding-top: 3%;
 }
+#tilbakeknapp3, #tilbakeknapp4{
+  margin-bottom: 8%;
+}
 
 .tabellvenstre {
   float: left;
