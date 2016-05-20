@@ -16,12 +16,12 @@ $(document).ready(function() {
   $("#produktlistemain").hide(); //skjuler heile main produktliste. skal visast etter varsel simuleringa
   $("#sophiekj").hide(); //skjuler kjolen til sophie elsie
   $("#extentions").hide(); //skjuler extentions til sophie elsie
-
+  $("#protovideo").hide(); //skjuler senkveld videoar ;)
+  $("#protovideo1").hide();//skjuler bloggerene
 
   //funksjon for brukarprofilar ved å vise personalisert innhald for andrea
   $("#andrea").click(function() {
     $("#profilar").hide();
-    $("#protovideo").hide();
     $("#protovideo1").show();
     $("#pop").hide();
   });
@@ -29,7 +29,6 @@ $(document).ready(function() {
   //funksjon for brukarprofilar ved å vise personalisert innhald for birger
   $("#birger").click(function() {
     $("#profilar").hide();
-    $("#protovideo1").hide();
     $("#protovideo").show();
     $("#pop1").hide();
   });
