@@ -334,7 +334,7 @@ bloggere.footnote({
 
 bloggere.footnote({
   start: 78,
-  end: 81
+  end: 81,
   target: "#pop1",
   text: "Tar du en pause fra programmet vil produktlisten med tilhørende produkter vises som en liten påminnelse."
 });
