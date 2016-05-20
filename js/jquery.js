@@ -228,14 +228,14 @@ document.addEventListener("DOMContentLoaded", function() {
     start: 30,
     end: 50,
     target: "#pop",
-    text: "Utvalgte produkter som vises i programmet vil etterhvert listes opp i seriens produktliste."
+    text: "Utvalgte produkter som vises i programmet vil etterhvert listes opp under 'Dine produkter'."
   });
 
   popcorn.footnote({
     start: 60,
     end: 75,
     target: "#pop",
-    text: "Nå ser du at det nye albumet til Aurora er lagt til i produktlisten."
+    text: "Nå ser du at det nye albumet til Aurora er lagt til."
   });
 
   popcorn.footnote({
@@ -301,14 +301,14 @@ bloggere.footnote({
   start: 20,
   end: 30,
   target: "#pop1",
-  text: "Utvalgte produkter som vises i programmet vil etterhvert listes opp i seriens produktliste."
+  text: "Utvalgte produkter som vises i programmet vil etterhvert listes opp under 'Dine produkter'."
 });
 
 bloggere.footnote({
   start: 35,
   end: 40,
   target: "#pop1",
-  text: "Nå ser du at kjolen til Sophie Elise er lagt til i produktlisten."
+  text: "Nå ser du at kjolen til Sophie Elise er lagt til."
 });
 
 bloggere.footnote({
