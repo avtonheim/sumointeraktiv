@@ -355,7 +355,7 @@ document.addEventListener("DOMContentLoaded", function() {
     start: 100,
     end: 130,
     target: "#pop",
-    text: "Ser du noe du liker? Hva med å sjekke ut skjorten Harald Rønneberg bruker?"
+    text: "Ser du noe du liker? Hva med å sjekke ut skjorten Harald Rønneberg bruker? Klikk 'kjøp nå' for å se mer."
   });
 
   popcorn.footnote({
@@ -428,7 +428,7 @@ bloggere.footnote({
   start: 50,
   end: 55,
   target: "#pop1",
-  text: "Ser du noe du liker? Hva med å sjekke ut kjolen Sophie Elise har på?"
+  text: "Ser du noe du liker? Hva med å sjekke ut kjolen Sophie Elise har på? Klikk på 'kjøp nå' for å se mer."
 });
 
 bloggere.footnote({
