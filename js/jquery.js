@@ -201,17 +201,6 @@ $(document).ready(function() {
    $("senkveld").hide();
  });
 
-//video on end skal aktiv pause ikkje visast
-
-document.getElementById('protovideo').addEventListener('ended',myHandler,false);
-   function myHandler(e) {
-       $("#aktivpause").hide();
-   }
-
-   document.getElementById('protovideo1').addEventListener('ended',myHandler,false);
-      function myHandler(e) {
-          $("#aktivpause").hide();
-      }
 
   //funksjon for å vise at ting blir lagt til i produktlista
   //Fikser animasjonting
@@ -248,7 +237,6 @@ document.getElementById('protovideo').addEventListener('ended',myHandler,false);
   $(".kjopknappprodukt").click(function() {
     alert("Denne funksjonen er ikke støttet enda. Prøv igjen senere");
   });
-
 
 
   //pil til venstre i skjorte
@@ -305,6 +293,19 @@ document.getElementById('protovideo').addEventListener('ended',myHandler,false);
   $("#hamburger-nav").click(function() {
     $(".container").toggle();
   });
+
+
+  //video on end skal aktiv pause ikkje visast
+
+  document.getElementById('protovideo').addEventListener('ended',myHandler,false);
+     function myHandler(e) {
+         $("#aktivpause").hide();
+     }
+
+     document.getElementById('protovideo1').addEventListener('ended',myHandler,false);
+        function myHandler(e) {
+            $("#aktivpause").hide();
+        }
 
 });
 //fikser å legge inn tekst tima i videoen.
