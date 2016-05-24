@@ -152,14 +152,6 @@ Altså høgre section*/
   margin-top: 5%;
 }
 
-.ingresstext {
-  font-size: 20px;
-  font-family: 'Crimson Text', serif;
-  font-style: italic;
-  font-weight: 600;
-  line-height: 1.25;
-}
-
 /*Bilde for blogg*/
 .bloggbilde {
   width: 350px;
