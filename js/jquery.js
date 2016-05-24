@@ -201,7 +201,17 @@ $(document).ready(function() {
    $("senkveld").hide();
  });
 
+//video on end skal aktiv pause ikkje visast
 
+document.getElementById('protovideo').addEventListener('ended',myHandler,false);
+   function myHandler(e) {
+       $("#aktivpause").hide();
+   }
+
+   document.getElementById('protovideo1').addEventListener('ended',myHandler,false);
+      function myHandler(e) {
+          $("#aktivpause").hide();
+      }
 
   //funksjon for å vise at ting blir lagt til i produktlista
   //Fikser animasjonting
@@ -470,7 +480,7 @@ bloggere.code({
   //Fikser trigger klikk av varsel i senkveld
   popcorn.code({
     start: 10, //3 sekund så kjem den fram
-    end: 420, //blir vist heile tida til videoen sluttar
+    end: 480, //blir vist heile tida til videoen sluttar
     onStart: function(options) {
       var lastskjerm = $("#vanskelig").contents().find("#lastskjerm");
       var varseltv2 = $("#vanskelig").contents().find("#varseltv2");
@@ -503,7 +513,7 @@ bloggere.code({
   //Fikser trigger klikk av varsel i senkveld
     popcorn.code({
       start: 30, //3 sekund så kjem den fram
-      end: 420, //blir vist heile tida til videoen sluttar
+      end: 480, //blir vist heile tida til videoen sluttar
       onStart: function(options) {
         var lastskjerm = $("#vanskelig").contents().find("#lastskjerm");
         var varseltv2 = $("#vanskelig").contents().find("#varseltv2");
@@ -549,7 +559,7 @@ bloggere.code({
   //Legger til skjorte med id 1
   popcorn.code({
     start: 100, //100 sekund så kjem den fram
-    end: 420, //blir vis heile tida til videoen sluttar
+    end: 480, //blir vis heile tida til videoen sluttar
     onStart: function(options) {
       var skjorte = $("#vanskelig").contents().find("#skjorte");
       var aurora = $("#vanskelig").contents().find("#aurora");
@@ -565,7 +575,7 @@ bloggere.code({
   //Legger til Aurora med id 2
   popcorn.code({
     start: 60, //30 sekund så kjem den fram.
-    end: 420, //blir vis heile tida til videoen sluttar
+    end: 480, //blir vis heile tida til videoen sluttar
     onStart: function(options) {
       var aur = $("#vanskelig").contents().find("#aurora"); //for å finne aurora i iframe
         $(aur).fadeIn(50);
