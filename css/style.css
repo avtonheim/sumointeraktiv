@@ -143,7 +143,7 @@ header a{
 
 /*Bilder i produkt.html*/
 .bilde-stor {
-  width: 100vw;
+  width: 100%;
   text-align: center;
   background-color: white;
   margin-top: 10px;
