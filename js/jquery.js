@@ -182,7 +182,7 @@ $(document).ready(function() {
    });
 
    //fikser kjøp nå i zalandokjop med hide/show av innhald
-   $("#extentions").click(function() {
+   $("#extentionkjop").click(function() {
      $("#tittelfront").hide();
      $("#extprodukt").show();
    });
