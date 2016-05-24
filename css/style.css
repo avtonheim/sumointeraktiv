@@ -208,7 +208,7 @@ button:hover {
   position: absolute;
   background-color: #D1D1D1;
   width: 100%;
-  height: auto;
+  height: 130%;
 }
 #hjelptekst{
   margin: auto;
