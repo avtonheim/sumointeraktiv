@@ -92,13 +92,14 @@ margin-top: 12%;
     font-weight: 500;
     font-style: normal;
     font-size: 28px;
-    margin-top: 231px;
+    margin-top: 205px;
     text-align: justify;
 }
 
 .innholdbilde {
     float: left;
-    margin-top: 20px;
+    margin-left: -15px;
+    margin-top: 25px;
 }
 
 .innholdtekst {
